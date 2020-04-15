@@ -1,5 +1,13 @@
+:root {
+
+}
+
+html, body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
