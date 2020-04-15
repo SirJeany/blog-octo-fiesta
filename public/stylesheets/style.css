@@ -23,6 +23,7 @@ ul {
 
 .align-right {
   float: right;
+  clear: both;
 }
 
 /* ---------- SPECIFIC PROPS ---------- */
