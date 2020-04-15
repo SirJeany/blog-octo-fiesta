@@ -1,7 +1,6 @@
 /* ---------- GENREAL PROPERTIES ---------- */
-:root {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+/* Be Vietnam font: */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;800&display=swap');
 
 html, body {
   padding: 0 !important;
@@ -9,7 +8,7 @@ html, body {
 }
 
 body {
-  
+  font: 14px 'Be Vietnam', sans-serif, Helvetica, Arial !important;
 }
 
 a {
