@@ -1,3 +1,4 @@
+/* ---------- GENREAL PROPERTIES ---------- */
 :root {
 
 }
@@ -13,4 +14,17 @@ body {
 
 a {
   color: #00B7FF;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- SPECIFIC PROPS ---------- */
+
+/* MAIN */
+main {
+  margin-top: 22px;
 }
