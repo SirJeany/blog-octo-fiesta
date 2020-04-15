@@ -21,6 +21,10 @@ ul {
   padding: 0;
 }
 
+.align-right {
+  float: right;
+}
+
 /* ---------- SPECIFIC PROPS ---------- */
 
 /* MAIN */
