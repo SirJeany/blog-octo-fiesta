@@ -1,0 +1,39 @@
+Brief for project:
+
+Build a blog. 
+Allow users to log in, post and update articles.
+The blog should be about the users interests and hobbies.
+The user would need to be logged in to update and post.
+
+Fully functional req:
+1) Home page - displaying an overview of what the blog is  about
+2) The blog should be highly visual - high res crispy imgs that are not too big still
+3) Home page has a banner/hero img. 
+4) SHowcase at least 3 of the latest blog posts.
+5) NEW POST PAGE: User has the option of creating a new post.
+	5.1) New post should have the following fields: Title, Content, Author (the user), Featured img, date field.
+6) In order to update or create you need to add rich text in order to style articles - this requires a third party wysiwyg
+7) EDIT POST PAGE: User should be able to edit the existing blog post. 
+8) ARCHIVE PAGE: A page which displays all the blog posts of a user
+9) You will need a single post page (a view for a particular blog post) - but also list some blog posts that are related
+to this current post on the side (or bottom).
+
+10) Registration and signup page - if a user is not registered/signed in then they cant CUD (but can read)
+	- So user will be able to see the view page and home page.
+
+11) Registration will require fname lname email and pswrd - should be able to validate & password strength should be strong!
+
+12) Your blog will also need to make use  of the following - 
+	- User may be able to upload imgs
+	- News letter sign up form
+	- The information of the newsletter should be saved in a db.json file
+	- All details should be saved in a cookie.
+
+13) BONUS: use Mongo db instead of db.json
+
+14) Tools needed: 
+	- Mock db
+	- Json server
+	- Frameworks for styling.. Bulma, bootstrap, 
+	- Node, express, [mongo]
+	- pixelbay, stockimages
