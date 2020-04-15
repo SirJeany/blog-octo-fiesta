@@ -1,6 +1,6 @@
 /* ---------- GENREAL PROPERTIES ---------- */
 :root {
-
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 html, body {
@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
 }
 
 a {
