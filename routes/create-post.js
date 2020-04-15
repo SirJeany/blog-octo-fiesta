@@ -29,6 +29,7 @@ router.post('/', function(req, res, next){
         console.log("Body: ", JSON.stringify(body));
         // res.render.apply('create-post', {message: "Created new post"});
         console.log("Response: ", response);
+        console.log("Error: ", error);
     });
 
     res.redirect('view-post/' + postId);
