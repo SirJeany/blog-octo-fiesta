@@ -4,7 +4,7 @@ let allPosts = require('../myPosts.json');
 
 router.get('/:postId', function(req, res, next){
     id = req.params.postId;
-    post = allPosts.myPosts[id-1];
+    post = allPosts.myPosts[id-1]; //We should look though and find the id rather than this
     let data = {
         title: post.title,
         content: post.content

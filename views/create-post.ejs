@@ -5,6 +5,14 @@
 </main>
 <section class="container">
     <form method="post">
+        <div class="form-group">
+            <label for="titleInput"><strong>Title</strong></label>
+            <input name="postTitle" type="text" class="form-control is-valid" id="titleInput" value="" required>
+            <div class="valid-feedback">
+                ToDo: add serverside validation
+            </div>
+        </div>
+        <textarea id="summernote" name="editordata"></textarea>
         <button class="btn btn-primary align-right">Publish</button>
     </form>
 </section>

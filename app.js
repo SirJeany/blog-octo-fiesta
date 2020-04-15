@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var bodyParser = require('body-parser');
 
 var indexRouter = require('./routes/index');
 let viewPostRouter = require('./routes/view-post');
@@ -19,6 +20,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+// NECESSARY FOR USING THE 'body' WHEN RENDERING
+//support parsing of application/x-www-form-urlencoded post data
+app.use(bodyParser.urlencoded({ extended: true }));
+// support parsing of application/json type post data
+app.use(bodyParser.json());
 
 app.use('/', indexRouter);
 app.use('/view-post', viewPostRouter);

@@ -3,10 +3,7 @@
         {
             "id": 1,
             "title": "My first post",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus tellus in augue finibus, sit amet blandit sapien egestas. Nullam tempor auctor lacus aliquet ornare. Morbi maximus gravida ligula, sed scelerisque dolor dictum at. Aenean nisi felis, tempus non porttitor eget, consectetur sagittis ipsum. Cras dapibus purus in fringilla placerat. Curabitur faucibus nibh et nisi varius aliquam. Aliquam erat volutpat. Vestibulum faucibus purus arcu, ut tincidunt magna vehicula at. Proin lobortis consequat risus, id eleifend dolor sollicitudin a. Nunc suscipit nec orci quis fermentum. Donec at dictum nunc. Proin et interdum ex. Donec aliquam urna vitae orci feugiat ullamcorper. Proin facilisis mattis ornare. Praesent in quam varius, tempor orci et, pharetra nisi. Etiam at lectus et dui pharetra auctor.",
-            "images": [{
-                "title-image": ""
-            }]
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus tellus in augue finibus, sit amet blandit sapien egestas. Nullam tempor auctor lacus aliquet ornare. Morbi maximus gravida ligula, sed scelerisque dolor dictum at. Aenean nisi felis, tempus non porttitor eget, consectetur sagittis ipsum. Cras dapibus purus in fringilla placerat. Curabitur faucibus nibh et nisi varius aliquam. Aliquam erat volutpat. Vestibulum faucibus purus arcu, ut tincidunt magna vehicula at. Proin lobortis consequat risus, id eleifend dolor sollicitudin a. Nunc suscipit nec orci quis fermentum. Donec at dictum nunc. Proin et interdum ex. Donec aliquam urna vitae orci feugiat ullamcorper. Proin facilisis mattis ornare. Praesent in quam varius, tempor orci et, pharetra nisi. Etiam at lectus et dui pharetra auctor."
         }
     ]
 }
