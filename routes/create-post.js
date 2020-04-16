@@ -13,9 +13,6 @@ router.get('/', function(req, res, next){
 });
 
 router.post('/', function(req, res, next){
-    console.log("Body: ", req.body);
-    console.log("postTItle: ", req.body.postTitle);
-    console.log("editordata: ", req.body.editordata);
     let myPosts = Posts.myPosts;
     let postId = myPosts.length+1;
     request({
@@ -28,12 +25,12 @@ router.post('/', function(req, res, next){
         }
     },
     function(error, response, body){
-        console.log("Body: ", JSON.stringify(body));
+        console.log("New body: ", JSON.stringify(body));
         // res.render.apply('create-post', {message: "Created new post"});
-        console.log("Response: ", response);
+        // console.log("Response: ", response);
         console.log("Error: ", error);
     });
-
+    console.log("New ID: ", postId);
     res.redirect('view-post/' + postId);
 });
 
