@@ -15,14 +15,18 @@ router.get('/:postId', function(req, res, next){
 
 
 router.post('/:postId', function(req, res, next){
+    console.log("req.body.postTitle = " + req.body.postTitle);
     request({
         url: "http://localhost:8000/myPosts" + req.params.postId,
-        method: "UPDATE",
+        method: "PATCH",
         form: {
             title: req.body.postTitle,
             content: req.body.editordata
         }
-    })
+    },function(error, response, body){
+        console.log("The new body:", body);
+    });
+    res.redirect('/view-post/'+req.params.postId);
 });
 
 
