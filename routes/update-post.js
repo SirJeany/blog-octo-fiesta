@@ -8,6 +8,8 @@ router.get('/:postId', function(req, res, next){
         title: post.title,
         content: post.content
     }
+
+    res.render('update-post', data);
 });
 
 module.exports = router

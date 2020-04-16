@@ -6,6 +6,7 @@ router.get('/:postId', function(req, res, next){
     id = req.params.postId;
     post = allPosts.myPosts[id-1]; //We should look though and find the id rather than this
     let data = {
+        postId: id,
         title: post.title,
         content: post.content
     }
