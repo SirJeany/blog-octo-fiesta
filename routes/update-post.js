@@ -31,14 +31,16 @@ router.post('/:postId', function(req, res, next){
     },function(error, response, body){
         console.log("The new body:", body);
     });
-    // res.redirect('/view-post/'+req.params.postId);
-    let post = myPosts[req.params.postId-1];
-    let data = {
-        postId: post.id,
-        title: post.title,
-        content: post.content
-    }
-    res.render.apply('/view-post/'+req.params.postId, {message: "Successful", data})
+    res.redirect('/view-post/'+req.params.postId);
+    
+    // let post = myPosts[req.params.postId-1];
+    // let data = {
+    //     postId: post.id,
+    //     title: post.title,
+    //     content: post.content
+    // }
+    // next;
+    // res.render.apply('/view-post/'+req.params.postId, {message: "Successful", data});
 });
 
 

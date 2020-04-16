@@ -14,6 +14,8 @@ router.get('/', function(req, res, next){
 
 router.post('/', function(req, res, next){
     console.log("Body: ", req.body);
+    console.log("postTItle: ", req.body.postTitle);
+    console.log("editordata: ", req.body.editordata);
     let myPosts = Posts.myPosts;
     let postId = myPosts.length+1;
     request({
