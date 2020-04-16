@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var indexRouter = require('./routes/index');
 let viewPostRouter = require('./routes/view-post');
 let createPostRouter = require('./routes/create-post');
+let updatePostRouter = require('./routes/update-post');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use(bodyParser.json());
 app.use('/', indexRouter);
 app.use('/view-post', viewPostRouter);
 app.use('/create-post', createPostRouter);
+app.use('/update-post', updatePostRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
