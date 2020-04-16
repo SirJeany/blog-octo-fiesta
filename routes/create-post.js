@@ -17,7 +17,7 @@ router.post('/', function(req, res, next){
     let myPosts = Posts.myPosts;
     let postId = myPosts.length+1;
     request({
-        url: "http://localhost:8000/myPosts",
+        url: "http://localhost:8000/myPosts/",
         method: "POST",
         form: {
             id: postId,
