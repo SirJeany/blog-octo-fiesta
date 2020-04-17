@@ -5,9 +5,11 @@ const request = require('request');
 
 router.get('/:postId', function(req, res, next){
     let post = myPosts[req.params.postId-1];
+    let login_as = checkCookies(req.cookies);
     let data = {
         title: post.title,
-        content: post.content
+        content: post.content,
+        login: login_as
     }
 
     res.render('update-post', data);
@@ -45,5 +47,14 @@ router.post('/:postId', function(req, res, next){
     // res.render.apply('/view-post/'+req.params.postId, {message: "Successful", data});
 });
 
+function checkCookies(cookies) {
+    console.log("Cookies: ", cookies);
+    let loggedInAs = cookies.loggedInAs;
+    if(loggedInAs.length > 0) {
+      return loggedInAs;
+    } else {
+      return -1;
+    }
+  }
 
 module.exports = router

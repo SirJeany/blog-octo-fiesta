@@ -5,8 +5,10 @@ let Posts = require('../myPosts.json');
 var bodyParser = require('body-parser');
 
 router.get('/', function(req, res, next){
+    let login_as = checkCookies(req.cookies);
     let data = {
-        title: "Create Post"
+        title: "Create Post",
+        login: login_as
     }
 
     res.render('create-post', data);
@@ -33,5 +35,15 @@ router.post('/', function(req, res, next){
     console.log("New ID: ", postId);
     res.redirect('view-post/' + postId);
 });
+
+function checkCookies(cookies) {
+    console.log("Cookies: ", cookies);
+    let loggedInAs = cookies.loggedInAs;
+    if(loggedInAs.length > 0) {
+      return loggedInAs;
+    } else {
+      return -1;
+    }
+  }
 
 module.exports = router;
