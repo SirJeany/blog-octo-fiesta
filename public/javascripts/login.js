@@ -1,5 +1,6 @@
 'use strict'
-let users = require('../../users.json').allUsers;
+// let users = require('../../users.json').allUsers; //cant do this >.<
+
 // Functionality for user login:
 // Each page's header contains the login form.
 // If logged in: display "Hi there /user_first_name/!" With a logout button.
@@ -14,9 +15,13 @@ let users = require('../../users.json').allUsers;
 
 // Login:
 // Check if the details corrosponds to the users db, then:
-// Add to the cookie.
+// Add to the cookie. 
+// ToDO: link up users with server?
+/*
 let loginBtn = document.getElementById('loginBtn');
+
 if(loginBtn){
+    
     let emailInput = document.getElementById('emailInput').value;
     let passwordInput = document.getElementById('passwordInput').value;
     
@@ -25,6 +30,7 @@ if(loginBtn){
         let foundUser = -1; // the index at which the user was found
         // Look through db for login details.
         for(let i = 0; i < users.length && !found; i++){
+            alert(users[i]);
             if(users[i].email == emailInput && users[i].password == passwordInput) {
                 found = true;
                 foundUser = i;
@@ -37,6 +43,7 @@ if(loginBtn){
         }
     });
 }
+*/
 
 // Logout:
 // Clear the cookie.
