@@ -8,7 +8,7 @@
 // Filling in the form with correct login details should then log in the user and 
 // display the as shown in 'if logged in'
 // Clicking on 'Register' takes the user to the register page.
-
+    
 // NOTE: current user identity (so knowing if logged in or not) is held as a cookie.
 
 // !! THIS IS NO LONGER DONE HERE ^ Now we run an if statement in the start_html.ejs
