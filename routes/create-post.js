@@ -8,7 +8,8 @@ router.get('/', function(req, res, next){
     let login_as = checkCookies(req.cookies);
     let data = {
         title: "Create Post",
-        login: login_as[0],
+        login: login_as,
+        login_name: login_as[0],
         user_type: login_as[1]
     }
 
@@ -38,13 +39,18 @@ router.post('/', function(req, res, next){
 });
 
 function checkCookies(cookies) {
-    console.log("Cookies: ", cookies);
+    console.log("Cookies: ", cookies.loggedInAs);
     let loggedInAs = cookies.loggedInAs;
-    if(loggedInAs.length > 0) {
-      return loggedInAs;
-    } else {
-      return -1;
+    try {
+        if(loggedInAs.length > 0) {
+            return loggedInAs.split('|');
+        } else {
+            return -1;
+        }
+    } catch (error) {
+        console.log('No cookie, so no data for login');
+        return -1;
     }
-  }
+}
 
 module.exports = router;

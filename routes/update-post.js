@@ -10,6 +10,7 @@ router.get('/:postId', function(req, res, next){
         title: post.title,
         content: post.content,
         login: login_as,
+        login_name: login_as[0],
         user_type: login_as[1]
     }
 
@@ -49,18 +50,18 @@ router.post('/:postId', function(req, res, next){
 });
 
 function checkCookies(cookies) {
-    console.log("Cookies: ", cookies);
-    let loggedInAs = cookies.loggedInAs;
-    try {
+  console.log("Cookies: ", cookies.loggedInAs);
+  let loggedInAs = cookies.loggedInAs;
+  try {
       if(loggedInAs.length > 0) {
-        return loggedInAs;
+          return loggedInAs.split('|');
       } else {
-        return -1;
+          return -1;
       }
-    } catch (error) {
+  } catch (error) {
       console.log('No cookie, so no data for login');
       return -1;
-    }
+  }
 }
 
 module.exports = router

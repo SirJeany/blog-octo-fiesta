@@ -5,20 +5,18 @@
   </div>
   <h1><%= title %></h1>
   <p>Welcome to <%= title %></p>
-
+  
   <ul>
+  <% for(let i = 0; i < 3; i++){ %>
     <li>
-      <a href="/view-post/1">This is a completed first post</a>
+      <a href="/view-post/<%= posts[i].id %>"><%= posts[i].title %></a>
     </li>
-    <li>
-      <a href="/view-post/2">This is a completed second post</a>
-    </li>
-    <li>
-      <a href="/view-post/3">This is a completed third post</a>
-    </li>
+  <% }; %>
   </ul>
 
   <p>Create a new post <span><a href="/create-post">Here!</a></span></p>
+
+  <p>Want to see more? View the arcives here: <span><a href="/archives">To the Archives!</a></span></p>
   
 </main>
 

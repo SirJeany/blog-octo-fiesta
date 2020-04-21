@@ -1,5 +1,5 @@
 'use strict'
-// let users = require('../../users.json').allUsers; //cant do this >.<
+let users = require('../../users.json').allUsers; //cant do this >.<
 
 // Functionality for user login:
 // Each page's header contains the login form.
@@ -18,6 +18,7 @@
 // Add to the cookie. 
 // ToDO: link up users with server?
 /*
+
 let loginBtn = document.getElementById('loginBtn');
 
 if(loginBtn){

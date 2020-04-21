@@ -6,7 +6,7 @@
             "last_name": "van Riet",
             "email": "jmvanriet1@gmail.com",
             "password": "12345",
-            "is_admin": true
+            "permissions": "CRUDM"
         },
         {
             "id" : 1,
@@ -14,7 +14,7 @@
             "last_name": "Dunst",
             "email": "jane@email.com",
             "password": "5Ruak$6tTAUudMi",
-            "is_admin": false
+            "permissions": "RUM"
         }
     ]
 }
