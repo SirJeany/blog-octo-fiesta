@@ -29,8 +29,6 @@ router.get('/', function(req, res, next) {
         let data = {
           title: "Home",
           login: login_as,
-          login_name: login_as[0],
-          user_type: login_as[1],
           posts: JSON.parse(body)
         }
         // console.log("Body of second: ", JSON.parse(body));
@@ -48,17 +46,17 @@ router.get('/', function(req, res, next) {
 
 // Need to make this function centralised somewhere. Doesnt work app.js or in separate js...
 function checkCookies(cookies) {
-  console.log("Cookies: ", cookies.loggedInAs);
+  console.log("Cookies: ", cookies);
   let loggedInAs = cookies.loggedInAs;
   try {
-      if(loggedInAs.length > 0) {
-          return loggedInAs.split('|');
-      } else {
-          return -1;
-      }
-  } catch (error) {
-      console.log('No cookie, so no data for login');
+    if(loggedInAs.length > 0) {
+      return loggedInAs;
+    } else {
       return -1;
+    }
+  } catch (error) {
+    console.log('No cookie, so no data for login');
+    return -1;
   }
 }
 

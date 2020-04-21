@@ -1,5 +1,5 @@
 'use strict'
-let users = require('../../users.json').allUsers; //cant do this >.<
+// let users = require('../../users.json').allUsers; //cant do this >.<s
 
 // Functionality for user login:
 // Each page's header contains the login form.

@@ -13,9 +13,7 @@ router.get('/:postId', function(req, res, next){
             postId: id,
             title: post.title,
             content: post.content,
-            login: login_as,
-            login_name: login_as[0],
-            user_type: login_as[1]
+            login: login_as
         }
         res.render('view-post', data);
 
@@ -24,17 +22,17 @@ router.get('/:postId', function(req, res, next){
 });
 
 function checkCookies(cookies) {
-  console.log("Cookies: ", cookies.loggedInAs);
+  console.log("Cookies: ", cookies);
   let loggedInAs = cookies.loggedInAs;
   try {
-      if(loggedInAs.length > 0) {
-          return loggedInAs.split('|');
-      } else {
-          return -1;
-      }
-  } catch (error) {
-      console.log('No cookie, so no data for login');
+    if(loggedInAs.length > 0) {
+      return loggedInAs;
+    } else {
       return -1;
+    }
+  } catch (error) {
+    console.log('No cookie, so no data for login');
+    return -1;
   }
 }
 
