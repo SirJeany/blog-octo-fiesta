@@ -25,16 +25,16 @@
             </div>
           </div>
         <% } else { %>
-          <form class="form-inline">
+          <form method="GET" class="form-inline">
             <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="loginBtn"><a href="/">Login</a></span>
+              <div class="input-group-append">
+                <span class="input-group-text" id="registerBtn"><a href="/register">Register</a></span>
+                <span class="input-group-text"><strong>OR</strong></span>
               </div>
               <input id="emailInput" type="email" class="form-control" placeholder="email@mail.com" aria-label="Email" aria-describedby="loginBtn">
               <input id="passwordInput" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="loginBtn">
-              <div class="input-group-append">
-                <span class="input-group-text"><strong>OR</strong></span>
-                <span class="input-group-text" id="registerBtn"><a href="/register">Register</a></span>
+              <div class="input-group-prepend">
+                <span class="input-group-text"><a id="loginBtn" href="/login">Login</a></span>
               </div>
             </div>
           </form>

@@ -11,6 +11,7 @@ let viewPostRouter = require('./routes/view-post');
 let createPostRouter = require('./routes/create-post');
 let updatePostRouter = require('./routes/update-post');
 let registerRouter = require('./routes/register');
+let loginRouter = require('./routes/login');
 
 var app = express();
 
@@ -34,6 +35,7 @@ app.use('/view-post', viewPostRouter);
 app.use('/create-post', createPostRouter);
 app.use('/update-post', updatePostRouter);
 app.use('/register', registerRouter);
+app.use('/login', loginRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

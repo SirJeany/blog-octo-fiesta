@@ -17,7 +17,7 @@
 // Check if the details corrosponds to the users db, then:
 // Add to the cookie. 
 // ToDO: link up users with server?
-/*
+
 
 let loginBtn = document.getElementById('loginBtn');
 
@@ -27,24 +27,28 @@ if(loginBtn){
     let passwordInput = document.getElementById('passwordInput').value;
     
     loginBtn.addEventListener('click', () => {
-        let found = false; // Check if user was found
-        let foundUser = -1; // the index at which the user was found
-        // Look through db for login details.
-        for(let i = 0; i < users.length && !found; i++){
-            alert(users[i]);
-            if(users[i].email == emailInput && users[i].password == passwordInput) {
-                found = true;
-                foundUser = i;
-            }
-        }
+        console.log('Logging in!')
+        document.cookie = "checkLogin=" + emailInput + "|" + passwordInput + ";";
+        // window.location = 'login/' + emailInput + '/' + passwordInput;
 
-        // If the user was found:
-        if(found){
-            document.cookie = "loggedInAs=" + users[foundUser].first_name;
-        }
+        // let found = false; // Check if user was found
+        // let foundUser = -1; // the index at which the user was found
+        // // Look through db for login details.
+        // for(let i = 0; i < users.length && !found; i++){
+        //     alert(users[i]);
+        //     if(users[i].email == emailInput && users[i].password == passwordInput) {
+        //         found = true;
+        //         foundUser = i;
+        //     }
+        // }
+
+        // // If the user was found:
+        // if(found){
+        //     document.cookie = "loggedInAs=" + users[foundUser].first_name;
+        // }
     });
 }
-*/
+
 
 // Logout:
 // Clear the cookie.
