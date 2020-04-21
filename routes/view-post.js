@@ -13,11 +13,12 @@ router.get('/:postId', function(req, res, next){
             postId: id,
             title: post.title,
             content: post.content,
-            login: login_as
+            login: login_as,
+            user_type: login_as[1]
         }
         res.render('view-post', data);
 
-    }, 150);
+    }, 200);
     // Note - 150ms is the lowest Ive tested with that works. 100ms is too quick for instance.
 });
 

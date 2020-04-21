@@ -1,10 +1,5 @@
 'use strict'
 
-// Using Summernote:
-$(document).ready(function() {
-    $('#summernote').summernote();
-});
-
 const heroImageDiv = document.getElementById('heroImage');
 let imgH = heroImageDiv.offsetHeight;
 let imgW = heroImageDiv.offsetWidth;

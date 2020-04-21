@@ -5,7 +5,8 @@ router.get('/', function(req, res){
     let login_as = checkCookies(req.cookies);
     let data = {
         title: "Register",
-        login: login_as
+        login: login_as[0],
+        user_type: login_as[1]
     }
 
     res.render('register', data);

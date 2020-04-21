@@ -9,7 +9,8 @@ router.get('/:postId', function(req, res, next){
     let data = {
         title: post.title,
         content: post.content,
-        login: login_as
+        login: login_as,
+        user_type: login_as[1]
     }
 
     res.render('update-post', data);
