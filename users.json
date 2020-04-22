@@ -20,7 +20,7 @@
       "id": "3",
       "first_name": "New user",
       "last_name": "new",
-      "email": "jane@email.com",
+      "email": "new@email.com",
       "password": "123",
       "permissions": "RUM"
     }

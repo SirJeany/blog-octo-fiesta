@@ -15,15 +15,24 @@ router.get('/', function(req, res, next){
 });
 
 router.post('/', function(req, res, next){
+    // New post id:
     let myPosts = Posts.myPosts;
-    let postId = myPosts.length+1;
+    let postId = myPosts.length + 1;
+    // Date published:
+    let d = new Date();
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let published_date = d.getDate() + " " + months[d.getMonth()] + " - " + d.getFullYear();
+    
     request({
         url: "http://localhost:8000/myPosts/",
         method: "POST",
         form: {
             id: postId,
             title: req.body.postTitle,
-            content: req.body.editordata
+            content: req.body.editordata,
+            featered_img: req.body.postImage,
+            author: req.body.postAuthor,
+            published_date: published_date
         }
     },
     function(error, response, body){

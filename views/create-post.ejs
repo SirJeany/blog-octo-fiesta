@@ -12,6 +12,21 @@
                 ToDo: add serverside validation
             </div>
         </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <label for="authorInput"><strong>Author</strong></label>
+                    <input name="postAuthor" type="text" class="form-control is-valid" id="auhtorInput" value="Jean-Maree" required>
+                </div>
+                <div class="col">
+                    <label for="imageInput"><strong>Featured Image</strong></label>
+                    <input name="postImage" type="text" class="form-control" id="imageInput" placeholder="www.google.com/images/yourimage">
+                    <small >
+                        Please insert a url to the web image. Can't yet upload local imagery.
+                    </small>
+                </div>
+            </div>
+        </div>
         <textarea id="summernote" name="editordata"></textarea>
         <button class="btn btn-primary align-right">Publish</button>
     </form>

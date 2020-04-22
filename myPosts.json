@@ -3,22 +3,42 @@
     {
       "id": 1,
       "title": "My first post",
-      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus tellus in augue finibus, sit amet blandit sapien egestas. Nullam tempor auctor lacus aliquet ornare. Morbi maximus gravida ligula, sed scelerisque dolor dictum at. Aenean nisi felis, tempus non porttitor eget, consectetur sagittis ipsum. Cras dapibus purus in fringilla placerat. Curabitur faucibus nibh et nisi varius aliquam. Aliquam erat volutpat. Vestibulum faucibus purus arcu, ut tincidunt magna vehicula at. Proin lobortis consequat risus, id eleifend dolor sollicitudin a. Nunc suscipit nec orci quis fermentum. Donec at dictum nunc. Proin et interdum ex. Donec aliquam urna vitae orci feugiat ullamcorper. Proin facilisis mattis ornare. Praesent in quam varius, tempor orci et, pharetra nisi. Etiam at lectus et dui pharetra auctor.</p><p><br></p><table class=\"table table-bordered\"><tbody><tr><td>HELLO GOGO</td></tr></tbody></table><p><br></p>"
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus tellus in augue finibus, sit amet blandit sapien egestas. Nullam tempor auctor lacus aliquet ornare. Morbi maximus gravida ligula, sed scelerisque dolor dictum at. Aenean nisi felis, tempus non porttitor eget, consectetur sagittis ipsum. Cras dapibus purus in fringilla placerat. Curabitur faucibus nibh et nisi varius aliquam. Aliquam erat volutpat. Vestibulum faucibus purus arcu, ut tincidunt magna vehicula at. Proin lobortis consequat risus, id eleifend dolor sollicitudin a. Nunc suscipit nec orci quis fermentum. Donec at dictum nunc. Proin et interdum ex. Donec aliquam urna vitae orci feugiat ullamcorper. Proin facilisis mattis ornare. Praesent in quam varius, tempor orci et, pharetra nisi. Etiam at lectus et dui pharetra auctor.</p><p><br></p><table class=\"table table-bordered\"><tbody><tr><td>HELLO GOGO</td></tr></tbody></table><p><br></p>",
+      "featured_img": "",
+      "author": "Jean-Maree",
+      "published_date": ""
     },
     {
       "id": "2",
       "title": "My Second post! - Update",
-      "content": "<p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif;\">Maecenas ultricies ipsum consectetur dignissim malesuada. Nunc non fringilla leo. Praesent viverra, lorem id posuere pellentesque, sem eros rhoncus lectus, nec iaculis enim erat eu lectus. In dolor massa, rutrum cursus sagittis quis, dictum vitae dui. Pellentesque eu ante dictum tellus cursus eleifend eget id turpis. Ut eu urna non libero bibendum ullamcorper. Curabitur luctus tortor tortor. Nullam finibus eros nunc.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif;\">Maecenas vel molestie neque, non sollicitudin risus. Etiam vel sem elementum orci placerat elementum ut id ex. Proin odio elit, facilisis at mi non, fermentum aliquet magna. Aliquam erat volutpat. Sed quis velit ligula. Vivamus nec molestie risus, quis bibendum lorem. Aliquam pulvinar leo vitae magna egestas feugiat. Aenean bibendum risus eros.</p>"
+      "content": "<p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif;\">Maecenas ultricies ipsum consectetur dignissim malesuada. Nunc non fringilla leo. Praesent viverra, lorem id posuere pellentesque, sem eros rhoncus lectus, nec iaculis enim erat eu lectus. In dolor massa, rutrum cursus sagittis quis, dictum vitae dui. Pellentesque eu ante dictum tellus cursus eleifend eget id turpis. Ut eu urna non libero bibendum ullamcorper. Curabitur luctus tortor tortor. Nullam finibus eros nunc.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif;\">Maecenas vel molestie neque, non sollicitudin risus. Etiam vel sem elementum orci placerat elementum ut id ex. Proin odio elit, facilisis at mi non, fermentum aliquet magna. Aliquam erat volutpat. Sed quis velit ligula. Vivamus nec molestie risus, quis bibendum lorem. Aliquam pulvinar leo vitae magna egestas feugiat. Aenean bibendum risus eros.</p>",
+      "featured_img": "",
+      "author": "Jean-Maree",
+      "published_date": ""
     },
     {
       "id": "3",
       "title": "My Third! -Update",
-      "content": "<p>Praesent aliquet, eros at vulputate rhoncus, mauris eros tincidunt lorem, vel cursus ex dolor ut eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sit amet diam dictum turpis tincidunt finibus non id mauris. Sed lorem dui, accumsan vitae dapibus et, lobortis sed massa. Phasellus vitae interdum neque, sed convallis enim. Duis et mauris tristique, tempor odio vel, ullamcorper orci. Pellentesque molestie vitae velit eget imperdiet.</p><p>Fusce id justo mi. In ornare ante sit amet blandit semper. Aenean volutpat justo et sem sollicitudin, mollis volutpat nisi pharetra. Pellentesque luctus pharetra magna. Duis eget turpis eget tortor sagittis aliquam. Aenean bibendum sem vel enim gravida, at posuere velit feugiat. Vivamus sollicitudin nulla blandit leo rutrum, non venenatis dui varius. Ut pulvinar convallis elit, eget faucibus libero ornare a. Etiam convallis fringilla nisi eget consectetur.</p>"
+      "content": "<p>Praesent aliquet, eros at vulputate rhoncus, mauris eros tincidunt lorem, vel cursus ex dolor ut eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sit amet diam dictum turpis tincidunt finibus non id mauris. Sed lorem dui, accumsan vitae dapibus et, lobortis sed massa. Phasellus vitae interdum neque, sed convallis enim. Duis et mauris tristique, tempor odio vel, ullamcorper orci. Pellentesque molestie vitae velit eget imperdiet.</p><p>Fusce id justo mi. In ornare ante sit amet blandit semper. Aenean volutpat justo et sem sollicitudin, mollis volutpat nisi pharetra. Pellentesque luctus pharetra magna. Duis eget turpis eget tortor sagittis aliquam. Aenean bibendum sem vel enim gravida, at posuere velit feugiat. Vivamus sollicitudin nulla blandit leo rutrum, non venenatis dui varius. Ut pulvinar convallis elit, eget faucibus libero ornare a. Etiam convallis fringilla nisi eget consectetur.</p>",
+      "featured_img": "",
+      "author": "Jean-Maree",
+      "published_date": ""
     },
     {
       "id": "4",
       "title": "Gourth! -update",
-      "content": "<p>fad fadsf&nbsp;</p><p>ads f</p><p>asd f</p><p>asdf&nbsp;</p><p>asdf&nbsp;</p><h1>asasdf</h1><p>adfa</p>"
+      "content": "<p>fad fadsf&nbsp;</p><p>ads f</p><p>asd f</p><p>asdf&nbsp;</p><p>asdf&nbsp;</p><h1>asasdf</h1><p>adfa</p>",
+      "featured_img": "",
+      "author": "Jean-Maree",
+      "published_date": ""
+    },
+    {
+      "id": "5",
+      "title": "Check new update",
+      "content": "<p>This is to test the new create post method</p><p><br></p>",
+      "featered_img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.yourdictionary.com%2Fdoggy&psig=AOvVaw3ggm6dPndbb2dEE0-lHR56&ust=1587655198661000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCND2m9eq_OgCFQAAAAAdAAAAABAD",
+      "author": "Jean-Maree",
+      "published_date": "April - 2020"
     }
   ]
 }
