@@ -1,7 +1,10 @@
 <%- include('start_html') %>
 <main class="container text-center">
-    <h1><%= title %></h1>
-    <%- content %>
+    <h2 class="display-3"><%= title %></h1>
+    <p class="font-weight-light"><%= author %> <span class="ml-auto"><%= published_date %></span></p>
+    <div class="post-content">
+        <%- content %>
+    </div>
 </main>
 <section class="container">
     <a class="btn btn-warning" href="/update-post/<%= postId %>">Update</a>
