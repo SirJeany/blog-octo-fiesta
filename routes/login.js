@@ -14,8 +14,8 @@ router.get('/', function(req, res){
             found = true;
         }
     }
-    res.send("Logging in as " + user_name);
-    res.end();
+    res.cookie('checkLogin', user_name);
+    res.redirect('/')
 });
 
 router.post('/', function(req, res){

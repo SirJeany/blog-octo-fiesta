@@ -47,7 +47,7 @@ router.get('/', function(req, res, next) {
 // Need to make this function centralised somewhere. Doesnt work app.js or in separate js...
 function checkCookies(cookies) {
   console.log("Cookies: ", cookies);
-  let loggedInAs = cookies.loggedInAs;
+  let loggedInAs = cookies.checkLogin;
   try {
     if(loggedInAs.length > 0) {
       return loggedInAs;
