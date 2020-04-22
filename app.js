@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var cookie = require('cookie');
+let session = require('express-session');
 
 var indexRouter = require('./routes/index');
 let viewPostRouter = require('./routes/view-post');
@@ -29,6 +30,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
 // support parsing of application/json type post data
 app.use(bodyParser.json());
+// Session for login:
+app.use(session({
+	secret: 'secret',
+	resave: true,
+	saveUninitialized: true
+}));
 
 app.use('/', indexRouter);
 app.use('/view-post', viewPostRouter);

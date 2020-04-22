@@ -19,35 +19,35 @@
 // ToDO: link up users with server?
 
 
-let loginBtn = document.getElementById('loginBtn');
+// let loginBtn = document.getElementById('loginBtn');
 
-if(loginBtn){
+// if(loginBtn){
     
-    let emailInput = document.getElementById('emailInput').value;
-    let passwordInput = document.getElementById('passwordInput').value;
+//     let emailInput = document.getElementById('emailInput').value;
+//     let passwordInput = document.getElementById('passwordInput').value;
     
-    loginBtn.addEventListener('click', () => {
-        console.log('Logging in!')
-        document.cookie = "checkLogin=" + emailInput + "|" + passwordInput + ";";
-        // window.location = 'login/' + emailInput + '/' + passwordInput;
+//     loginBtn.addEventListener('click', () => {
+//         console.log('Logging in!')
+//         document.cookie = "checkLogin=" + emailInput + "|" + passwordInput + ";";
+//         // window.location = 'login/' + emailInput + '/' + passwordInput;
 
-        // let found = false; // Check if user was found
-        // let foundUser = -1; // the index at which the user was found
-        // // Look through db for login details.
-        // for(let i = 0; i < users.length && !found; i++){
-        //     alert(users[i]);
-        //     if(users[i].email == emailInput && users[i].password == passwordInput) {
-        //         found = true;
-        //         foundUser = i;
-        //     }
-        // }
+//         // let found = false; // Check if user was found
+//         // let foundUser = -1; // the index at which the user was found
+//         // // Look through db for login details.
+//         // for(let i = 0; i < users.length && !found; i++){
+//         //     alert(users[i]);
+//         //     if(users[i].email == emailInput && users[i].password == passwordInput) {
+//         //         found = true;
+//         //         foundUser = i;
+//         //     }
+//         // }
 
-        // // If the user was found:
-        // if(found){
-        //     document.cookie = "loggedInAs=" + users[foundUser].first_name;
-        // }
-    });
-}
+//         // // If the user was found:
+//         // if(found){
+//         //     document.cookie = "loggedInAs=" + users[foundUser].first_name;
+//         // }
+//     });
+// }
 
 
 // Logout:

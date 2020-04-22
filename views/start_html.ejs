@@ -31,10 +31,15 @@
                 <span class="input-group-text" id="registerBtn"><a href="/register">Register</a></span>
                 <span class="input-group-text"><strong>OR</strong></span>
               </div>
-              <input id="emailInput" type="email" class="form-control" placeholder="email@mail.com" aria-label="Email" aria-describedby="loginBtn">
-              <input id="passwordInput" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="loginBtn">
+            </div>
+          </form>
+
+          <form method="POST" class="form-inline" action="/login">
+            <div class="input-group">
+              <input id="emailInput" name="emailInput" type="email" class="form-control" placeholder="email@mail.com" aria-label="Email" aria-describedby="loginBtn">
+              <input id="passwordInput" name="passwordInput" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="loginBtn">
               <div class="input-group-prepend">
-                <span class="input-group-text"><a id="loginBtn" href="/login">Login</a></span>
+                <span class="input-group-text"><button type="submit" id="loginBtn">Login</button></span>
               </div>
             </div>
           </form>
