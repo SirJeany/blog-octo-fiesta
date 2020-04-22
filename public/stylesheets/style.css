@@ -28,6 +28,46 @@ ul {
 
 /* ---------- SPECIFIC PROPS ---------- */
 
+/* HEADER AND NAV */
+/* .login-btn {
+  background-color: #e9ecef;
+} */
+
+.login-btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* https://www.steckinsights.com/shorten-length-border-bottom-pure-css/ */
+.login-btn::after {
+  content: ""; /* Needed for pseudo element to work */
+  display: block; /* Puts pseudo element on its own line */
+  /* margin: 0 auto; */
+  width: 0; /* Here lies the whole shibang. Starting with a 0 width we increase to to full on hover. */
+  border-bottom: 3px solid;  
+  transition: 0.4s;
+}
+.login-btn:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  transition: 0.4s;
+}
+
 /* MAIN */
 main {
   margin-top: 22px;

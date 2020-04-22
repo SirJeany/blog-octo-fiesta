@@ -25,13 +25,9 @@
             </div>
           </div>
         <% } else { %>
-          <form method="GET" class="form-inline">
-            <div class="input-group">
-              <div class="input-group-append">
-                <span class="input-group-text" id="registerBtn"><a href="/register">Register</a></span>
-                <span class="input-group-text"><strong>OR</strong></span>
-              </div>
-            </div>
+          <form method="GET" class="form-inline ml-auto">
+            <button id="registerBtn" class="login-btn" href="/register">Register</button>
+            <strong class="mr-5 ml-4">OR</strong>
           </form>
 
           <form method="POST" class="form-inline" action="/login">
@@ -39,7 +35,7 @@
               <input id="emailInput" name="emailInput" type="email" class="form-control" placeholder="email@mail.com" aria-label="Email" aria-describedby="loginBtn">
               <input id="passwordInput" name="passwordInput" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="loginBtn">
               <div class="input-group-prepend">
-                <span class="input-group-text"><button type="submit" id="loginBtn">Login</button></span>
+                <button type="submit" id="loginBtn" class="login-btn">Login</button>
               </div>
             </div>
           </form>
