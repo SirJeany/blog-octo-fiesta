@@ -6,7 +6,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 1000,
-        centerPadding: '200px',
+        variableWidth: true,
         // prevArrow: false,
         // nextArrow: '.next-course',
         arrows: true,

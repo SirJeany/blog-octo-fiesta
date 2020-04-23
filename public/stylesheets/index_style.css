@@ -1,6 +1,9 @@
 /* Specific for index.ejs */
 
 /* DISPLAYED POSTS: */
+.carousel-container {
+    width:690px;
+}
 .post-holder {
     display: flex;
 }
