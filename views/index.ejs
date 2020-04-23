@@ -6,13 +6,28 @@
   <h1><%= title %></h1>
   <p>Welcome to <%= title %></p>
   
-  <ul>
-  <% for(let i = 0; i < 3; i++){ %>
-    <li>
-      <a href="/view-post/<%= posts[i].id %>"><%= posts[i].title %></a>
-    </li>
-  <% }; %>
-  </ul>
+  <section class="carousel-container">
+    <div class="post-carousel">
+      <% for(let i = 0; i < 3; i++){ %>
+        <div class="mx-auto">
+          <div class="post-holder text-left">
+            <div class="post-image">
+              <img src="https://place-hold.it/400x300&text=Image&bold">
+            </div>
+            <div class="post-text">
+              <div class="post-div p-4 m-4 shadow">
+                <h4><%= posts[i].title %></h4>
+                <span class="post-content">ToDo: include subheading for each post</span>
+                <a href="/view-post/<%= posts[i].id %>">Let's see the post then!</a>
+                <br>
+                <small><%= posts[i].published_date %></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% }; %>
+    </div>
+  </section>
 
   <p>Create a new post <span><a href="/create-post">Here!</a></span></p>
 
@@ -20,6 +35,12 @@
   
 </main>
 
+<!-- Specific styles: -->
+
+
 <!-- My scripts: -->
 <script src="/javascripts/home.js"></script>
+<script src="/javascripts/post-carousel.js"></script>
+<!-- Slick: -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <%- include('end_html') %>
