@@ -12,13 +12,13 @@
         <div class="mx-auto">
           <div class="post-holder text-left">
             <div class="post-image shadow">
-              <img src="<%= posts[i].featured_img %>">
+              <a href="/view-post/<%= posts[i].id %>"><img src="<%= posts[i].featured_img %>"></a>
             </div>
             <div class="post-text">
               <div class="post-div p-4 m-4 shadow">
-                <h4><%= posts[i].title %></h4>
-                <span class="post-content">ToDo: include subheading for each post</span>
-                <a href="/view-post/<%= posts[i].id %>">Let's see the post then!</a>
+                <h4 class="mb-2"><%= posts[i].title %></h4>
+                <span class="post-content mb-2"><%= posts[i].subtitle %></span>
+                <a href="/view-post/<%= posts[i].id %>" class="mb-2">Let's see the post then!</a>
                 <br>
                 <small><%= posts[i].published_date %></small>
               </div>

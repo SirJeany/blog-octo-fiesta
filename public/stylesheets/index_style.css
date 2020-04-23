@@ -2,30 +2,35 @@
 
 /* DISPLAYED POSTS: */
 .carousel-container {
-    width:690px;
+    width:710px;
 }
+
 .post-holder {
     display: flex;
+    padding: 20px;
 }
 
 .post-holder shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.image-div {
-    /*   position: absolute; */
-    z-index: -1;
+.post-image img{
+    max-width: 400px;
+    max-height: 300px;
 }
 
-.post-image img{
-    width: 400px;
-    height: 300px;
+.post-image{
+    transition: transform 400ms ease-in;
+}
+.post-image:hover{
+    transform: translate(0px, -2%);
+    cursor: pointer;
 }
 
 .post-div {
     position: relative;
     width: 300px;
-    max-height: 200px;
+    max-height: 300px;
     background: white;
     box-shadow: 10px;
     right: 50px;
