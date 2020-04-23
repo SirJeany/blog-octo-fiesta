@@ -1,8 +1,8 @@
 let express = require('express');
 let router = express.Router();
 let request = require('request');
-let bodyParser = require('body-parser');
 let allUsers = require('../users.json').allUsers;
+const { check, validationResult } = require('express-validator');
 
 router.get('/', function(req, res){
   let login_as = checkCookies(req.cookies);
@@ -25,7 +25,8 @@ router.post('/', function(req, res){
       last_name: req.body.lastName,
       email: req.body.email,
       password: req.body.password,
-      permissions: "RUM"
+      permissions: "RUM",
+      subscribed_to_newsletter: req.body.newsletterCheckbox ? true : false
     }
   }, function(error, response, body){
     console.log("Error: ", error);
