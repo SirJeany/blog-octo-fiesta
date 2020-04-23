@@ -13,6 +13,10 @@ We're tasked with creating a blog (which contains some of our own material) in o
   - nodemon -start 
   - Now view app in browser at http://localhost::3000
 
+## Notes:
+### On logging in: 
+  - We were tasked with saving login details on a cookie. 
+
 ## Author:
 * **Jean-Maree van Riet** - [SirJeany](https://github.com/SirJeany)
 

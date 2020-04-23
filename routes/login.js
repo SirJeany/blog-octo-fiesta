@@ -15,7 +15,11 @@ router.get('/', function(req, res){
         }
     }
     // Now set the cookie details if found:
-    if(found) res.cookie('checkLogin', user_name);
+    if(found) {
+        res.cookie('checkLogin', user_name);
+    } else {
+        res.cookie('checkLogin', 'invalid_login');
+    }
     
     res.redirect('/')
 });

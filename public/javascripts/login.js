@@ -1,15 +1,7 @@
 'use strict'
-// Remove bootstrap's highlighting after button click:
-// Not quite working yet..
-let allButtons = document.querySelectorAll('button');
-if(allButtons) {
-    allButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            console.dir(this);
-            blur();
-        });
-    });
-}
+
+// Frontend Validation:
+
 
 
 // Logout:

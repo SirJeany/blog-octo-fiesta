@@ -15,7 +15,6 @@ let users = require('../users.json').allUsers;
 //         next('route')
 //       }
 //     });
-  
 // });
 
 /* GET home page. */
@@ -45,11 +44,15 @@ router.get('/', function(req, res, next) {
 });
 
 // Need to make this function centralised somewhere. Doesnt work app.js or in separate js...
+// Login cookies are being checked against flags set in /routes/login.js
 function checkCookies(cookies) {
   console.log("Cookies: ", cookies);
   let loggedInAs = cookies.checkLogin;
   try {
     if(loggedInAs.length > 0) {
+      if(loggedInAs == "invalid_login") {
+        return -2;
+      }
       return loggedInAs;
     } else {
       return -1;

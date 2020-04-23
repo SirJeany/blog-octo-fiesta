@@ -6,7 +6,8 @@
       "last_name": "van Riet",
       "email": "jmvanriet1@gmail.com",
       "password": "12345",
-      "permissions": "CRUDM"
+      "permissions": "CRUDM",
+      "subscribed_to_newsletter": "true"
     },
     {
       "id": 1,
@@ -14,7 +15,8 @@
       "last_name": "Dunst",
       "email": "jane@email.com",
       "password": "123",
-      "permissions": "RUM"
+      "permissions": "RUM",
+      "subscribed_to_newsletter": "false"
     },
     {
       "id": "3",
@@ -22,7 +24,8 @@
       "last_name": "new",
       "email": "new@email.com",
       "password": "123",
-      "permissions": "RUM"
+      "permissions": "RUM",
+      "subscribed_to_newsletter": "true"
     }
   ]
 }

@@ -24,7 +24,7 @@
     <header>
       <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="/">Home</a>
-        <% if(login != -1) { %>
+        <% if(login != -1 && login != -2) { %>
           <div class="form-inline">
             <div class="input-group-prepend mr-4">
               <span>Welcome, <%= login %></span>
@@ -34,20 +34,33 @@
             </div>
           </div>
         <% } else { %>
-          <form action="/register" method="GET" class="form-inline ml-auto">
-            <button id="registerBtn" class="login-btn" href="/register">Register</button>
-            <strong class="mr-5 ml-4">OR</strong>
-          </form>
+          <div>
 
-          <form method="POST" class="form-inline" action="/login">
-            <div class="input-group">
-              <input id="emailInput" name="emailInput" type="email" class="form-control" placeholder="email@mail.com" aria-label="Email" aria-describedby="loginBtn">
-              <input id="passwordInput" name="passwordInput" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="loginBtn">
-              <div class="input-group-prepend">
-                <button type="submit" id="loginBtn" class="login-btn">Login</button>
+            <div class="row">
+              <form action="/register" method="GET" class="form-inline col-3">
+                <button id="registerBtn" class="login-btn" href="/register">Register</button>
+                <strong class="mx-auto">OR</strong>
+              </form>
+    
+              <form method="POST" class="form-inline col-9" action="/login">
+                <div class="input-group">
+                  <input id="emailInput" name="emailInput" type="email" class="form-control" placeholder="email@mail.com" aria-label="Email" aria-describedby="loginBtn">
+                  <input id="passwordInput" name="passwordInput" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="loginBtn">
+                  <div class="input-group-prepend">
+                    <button type="submit" id="loginBtn" class="login-btn">Login</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-9">
+                <% if(login === -2) { %>
+                  <small class="text-warning">Invalid usernsame or password</small>
+                <% } %>
               </div>
             </div>
-          </form>
+          </div>
         <% } %>
       </nav>
     </header>
