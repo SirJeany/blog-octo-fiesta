@@ -36,7 +36,6 @@ ul {
 /* HEADER AND NAV */
 .login-btn {
   display: inline-block;
-  font-weight: 400;
   color: #212529;
   text-align: center;
   vertical-align: middle;
@@ -50,7 +49,6 @@ ul {
   padding: .375rem .75rem;
   font-size: 1rem;
   line-height: 1.5;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 /* https://www.steckinsights.com/shorten-length-border-bottom-pure-css/ */
@@ -58,15 +56,14 @@ ul {
   content: ""; /* Needed for pseudo element to work */
   display: block; /* Puts pseudo element on its own line */
   /* margin: 0 auto; */
-  width: 0; /* Here lies the whole shibang. Starting with a 0 width we increase to to full on hover. */
+  width: 0px; /* Here lies the whole shibang. Starting with a 0 width we increase to to full on hover. */
   border-bottom: 3px solid;  
-  transition: 0.4s;
+  transition: width 0.4s ease-in-out;
 }
 .login-btn:hover::after {
   content: "";
   display: block;
   width: 100%;
-  transition: 0.4s;
 }
 
 .text-warning {

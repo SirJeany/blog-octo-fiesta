@@ -31,8 +31,9 @@ router.post('/', function(req, res){
   }, function(error, response, body){
     console.log("Error: ", error);
     console.log("New user: ", JSON.stringify(body));
-    // Set the cookie details so that the user may be logged in immediately:
-    res.cookie('checkLogin', JSON.stringify(body.first_name));
+    // Try to set the cookie details so that the user may be logged in immediately:
+    // This results in multiple headers being set :(
+    // res.cookie('checkLogin', JSON.stringify(body.first_name));
   });
   res.redirect('/');
 });

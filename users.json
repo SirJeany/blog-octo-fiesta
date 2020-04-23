@@ -26,6 +26,24 @@
       "password": "123",
       "permissions": "RUM",
       "subscribed_to_newsletter": "true"
+    },
+    {
+      "id": "4",
+      "first_name": "New user",
+      "last_name": "Maree",
+      "email": "new@email.com",
+      "password": "123",
+      "permissions": "RUM",
+      "subscribed_to_newsletter": "true"
+    },
+    {
+      "id": "5",
+      "first_name": "New user",
+      "last_name": "van Riet",
+      "email": "new@email.com",
+      "password": "123",
+      "permissions": "RUM",
+      "subscribed_to_newsletter": "false"
     }
   ]
 }

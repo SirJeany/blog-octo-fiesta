@@ -29,6 +29,7 @@ router.post('/', function(req, res, next){
         form: {
             id: postId,
             title: req.body.postTitle,
+            subtitle: req.body.postSubtitle,
             content: req.body.editordata,
             featered_img: req.body.postImage,
             author: req.body.postAuthor,
