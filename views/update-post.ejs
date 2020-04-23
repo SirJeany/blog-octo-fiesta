@@ -1,5 +1,5 @@
 <%- include('start_html') %>
-<main class="container text-center">
+<main class="container text-center clearfix mb-4">
     <form method="post">
         <label for="titleInput"><strong>Update title:</strong></label>
         <input name="postTitle" type="text" class="form-control is-valid" id="titleInput" value="<%= title %>" required>
@@ -7,7 +7,7 @@
             ToDo: add serverside validation
         </div>
         <textarea id="summernote" name="editordata"><%= content %></textarea>
-        <button class="btn btn-primary align-right">Update</button>
+        <button class="btn btn-primary align-right mt-4">Update</button>
     </form>
     
 </main>

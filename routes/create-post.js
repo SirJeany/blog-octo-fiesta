@@ -47,18 +47,21 @@ router.post('/', function(req, res, next){
 });
 
 function checkCookies(cookies) {
-    console.log("Cookies: ", cookies);
-    let loggedInAs = cookies.loggedInAs;
-    try {
-      if(loggedInAs.length > 0) {
-        return loggedInAs;
-      } else {
-        return -1;
+  console.log("Cookies: ", cookies);
+  let loggedInAs = cookies.checkLogin;
+  try {
+    if(loggedInAs.length > 0) {
+      if(loggedInAs == "invalid_login") {
+        return -2;
       }
-    } catch (error) {
-      console.log('No cookie, so no data for login');
+      return loggedInAs;
+    } else {
       return -1;
     }
+  } catch (error) {
+    console.log('No cookie, so no data for login');
+    return -1;
+  }
 }
 
 module.exports = router;

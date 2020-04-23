@@ -41,9 +41,12 @@ router.post('/', function(req, res){
 // Need to make this function centralised somewhere. Doesnt work app.js or in separate js...
 function checkCookies(cookies) {
   console.log("Cookies: ", cookies);
-  let loggedInAs = cookies.loggedInAs;
+  let loggedInAs = cookies.checkLogin;
   try {
     if(loggedInAs.length > 0) {
+      if(loggedInAs == "invalid_login") {
+        return -2;
+      }
       return loggedInAs;
     } else {
       return -1;
