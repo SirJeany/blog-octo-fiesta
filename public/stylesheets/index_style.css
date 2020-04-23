@@ -17,6 +17,11 @@
     z-index: -1;
 }
 
+.post-image img{
+    width: 400px;
+    height: 300px;
+}
+
 .post-div {
     position: relative;
     width: 300px;
