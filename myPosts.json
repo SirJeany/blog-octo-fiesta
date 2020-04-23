@@ -44,6 +44,15 @@
       "featered_img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.yourdictionary.com%2Fdoggy&psig=AOvVaw3ggm6dPndbb2dEE0-lHR56&ust=1587655198661000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCND2m9eq_OgCFQAAAAAdAAAAABAD",
       "author": "Jean-Maree",
       "published_date": "30 April - 2020"
+    },
+    {
+      "id": "6",
+      "title": "Test new create",
+      "subtitle": "This is a test post that looks at the new create page",
+      "content": "<ul><li><h3>Some ipsum body:</h3></li></ul><p><span style=\"font-family: &quot;Be Vietnam&quot;; text-align: justify;\">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32</span><br></p><p><br></p>",
+      "featered_img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.yourdictionary.com%2Fdoggy&psig=AOvVaw3ggm6dPndbb2dEE0-lHR56&ust=1587655198661000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCND2m9eq_OgCFQAAAAAdAAAAABAD",
+      "author": "Jean-Maree",
+      "published_date": "23 April - 2020"
     }
   ]
 }

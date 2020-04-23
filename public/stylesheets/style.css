@@ -2,6 +2,10 @@
 /* Be Vietnam font: */
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;800&display=swap');
 
+:root {
+  --cg-blue: #2978A0;
+}
+
 html, body {
   padding: 0 !important;
   margin: 0 !important;
@@ -73,4 +77,12 @@ ul {
 /* MAIN */
 main {
   margin-top: 22px;
+}
+
+
+/* FOOTER: */
+footer {
+  background-color: var(--cg-blue);
+  height: 250px;
+  padding-top: 30px;
 }
