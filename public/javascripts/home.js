@@ -6,5 +6,6 @@ let imgW = heroImageDiv.offsetWidth;
 let heroImage = document.createElement('img');
 
 heroImage.setAttribute('src', `http://unsplash.it/${imgW}/${imgH}`);
+heroImage.classList.add('img-fluid');
 heroImageDiv.appendChild(heroImage);
 

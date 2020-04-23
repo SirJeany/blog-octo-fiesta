@@ -26,6 +26,8 @@
     right: 50px;
 }
 
+/* Truncate text over mulitple lines: */
+/* https://dev.to/temmietope/how-to-truncate-multi-line-string-with-pure-css-4fc9 */
 .post-content {
     display: -webkit-box;
     -webkit-box-orient: vertical;
