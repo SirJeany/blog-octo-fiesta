@@ -26,7 +26,7 @@ router.get('/', function(req, res, next) {
       'http://localhost:8000/myPosts/',
       function(error, response, body) {
         let data = {
-          title: "Home",
+          title: "TravelevarT",
           login: login_as,
           posts: JSON.parse(body)
         }
@@ -52,9 +52,12 @@ function checkCookies(cookies) {
     if(loggedInAs.length > 0) {
       if(loggedInAs == "invalid_login") {
         return -2;
+      } 
+      else {
+        return loggedInAs;
       }
-      return loggedInAs;
-    } else {
+    } 
+    else {
       return -1;
     }
   } catch (error) {
