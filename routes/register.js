@@ -17,7 +17,7 @@ router.get('/', function(req, res){
 router.post('/', function(req, res){
   let newUserID = allUsers.length + 1;
   request({
-    url: "http://localhost:8080/allUsers/",
+    url: "http://localhost:3000/allUsers/",
     method: "POST",
     form: {
       id: newUserID,

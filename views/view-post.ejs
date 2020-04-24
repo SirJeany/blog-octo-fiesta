@@ -1,9 +1,10 @@
 <%- include('start_html') %>
-<main class="container text-center">
-    <h2 class="display-3"><%= title %></h1>
-    <p class="font-weight-light"><%= author %> <span class="ml-auto"><%= published_date %></span></p>
-    <div class="post-content">
-        <%- content %>
+<main class="container">
+    <h2 class="display-3 mb-3"><%= title %></h1>
+    <div class="">
+        <img style="width: 500px; height: 400px;" src="<%= featured_img %>" alt="">
+        <p class="font-weight-light mb-5"><%= author %> <span class="ml-auto"><%= published_date %></span></p>
+        <div class="text-center"><%- content %></div>
     </div>
 </main>
 <section class="container mb-4">

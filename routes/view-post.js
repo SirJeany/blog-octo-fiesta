@@ -13,7 +13,7 @@ router.get('/:postId', function(req, res, next){
       postId: id,
       title: post.title,
       content: post.content,
-      featered_img: post.featered_img,
+      featured_img: post.featured_img,
       author: post.author,
       published_date: post.published_date,
       login: login_as
