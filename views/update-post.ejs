@@ -1,10 +1,20 @@
 <%- include('start_html') %>
 <main class="container text-center clearfix mb-4">
     <form method="post">
-        <label for="titleInput"><strong>Update title:</strong></label>
-        <input name="postTitle" type="text" class="form-control is-valid" id="titleInput" value="<%= title %>" required>
-        <div class="valid-feedback">
-            ToDo: add serverside validation
+        <div class="form-group">
+            <label for="titleInput"><strong>Update title:</strong></label>
+            <input name="postTitle" type="text" class="form-control is-valid" id="titleInput" value="<%= title %>" required>
+            <div class="valid-feedback">
+                ToDo: add serverside validation
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="subtitleInput"><strong>Update the subtitle:</strong></label>
+            <input name="postSubtitle" type="text" class="form-control" id="susbtitleInput" value="<%= subtitle %>">
+        </div>
+        <div class="form-group">
+            <label for="imageInput"><strong>Update featured image:</strong></label>
+            <input name="postImage" type="text" class="form-control" id="imageInput" value="<%= featured_img %>">
         </div>
         <textarea id="summernote" name="editordata"><%= content %></textarea>
         <button class="btn btn-primary align-right mt-4">Update</button>

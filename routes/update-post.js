@@ -8,6 +8,8 @@ router.get('/:postId', function(req, res, next){
   let login_as = checkCookies(req.cookies);
   let data = {
     title: post.title,
+    subtitle: post.subtitle,
+    featured_img: post.featered_img,
     content: post.content,
     login: login_as
   }
@@ -15,11 +17,6 @@ router.get('/:postId', function(req, res, next){
   res.render('update-post', data);
 });
 
-// router.get('/:postId', function(req, res, next){
-//     request({
-//         uri: "http://localhost:8000/myPosts/" + 
-//     })
-// });
 
 router.post('/:postId', function(req, res, next){
   console.log("req.body.postTitle = " + req.body.postTitle);
@@ -28,6 +25,8 @@ router.post('/:postId', function(req, res, next){
     method: "PATCH",
     form: {
       title: req.body.postTitle,
+      subtitle: req.body.postSubtitle,
+      featured_img: req.body.postImage,
       content: req.body.editordata
     }
   },function(error, response, body){
