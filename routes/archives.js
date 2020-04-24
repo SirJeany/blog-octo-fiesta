@@ -6,12 +6,14 @@ router.get('/', function(req, res){
     let login_as = checkCookies(req.cookies);
     request.get(
         'http://localhost:8000/myPosts/',
-        function(error, res, body){
+        function(error, resposnse, body){
             let data = {
                 title: "Archives",
                 login: login_as,
                 posts: JSON.parse(body)
             }
+
+            res.render('archives', data);
         }
     );
 });

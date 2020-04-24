@@ -31,7 +31,7 @@ router.post('/', function(req, res, next){
             title: req.body.postTitle,
             subtitle: req.body.postSubtitle,
             content: req.body.editordata,
-            featered_img: req.body.postImage,
+            featured_img: req.body.postImage,
             author: req.body.postAuthor,
             published_date: published_date
         }

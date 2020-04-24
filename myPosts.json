@@ -26,6 +26,15 @@
       "featured_img": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/02/04/16/himalayas-mountains.jpg",
       "author": "Jean-Maree",
       "published_date": "24 April - 2020"
+    },
+    {
+      "id": "4",
+      "title": "A little bit about Unsplash",
+      "subtitle": "Here I'm using Unsplash images to fill in - this way I'll be focused on the project.",
+      "content": "<p>Unsplash images made my life a lot easier whilst providing me project with crisp, fresh images constantly. I believe that it is worthwhile to delve into the API to reap the following benefits:</p><ul><li>&nbsp; - Categories: I'll be able to select exactly which kinds of images I want.</li></ul><p>&nbsp; - Responsiveness: Improved responsiveness from images.</p><p>Hopefully this way I can continue to use stock images whilst focusing on the blog.</p>",
+      "featured_img": "http://unsplash.it/400/300",
+      "author": "Jean-Maree",
+      "published_date": "24 April - 2020"
     }
   ]
 }
