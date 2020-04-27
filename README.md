@@ -11,7 +11,7 @@ We're tasked with creating a blog (which contains some of our own material) in o
   - npm install json-server -g 
   - npm install
   - nodemon -start 
-  - Now view app in browser at http://localhost:3000
+  - Now view app in browser at http://localhost:8080
 
 ## Notes:
 ### On logging in: 

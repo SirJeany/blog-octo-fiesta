@@ -1,10 +1,17 @@
 {
   "name": "blog-octo-fiesta",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
+  "keywords": [
+    "blog",
+    "node js",
+    "express",
+    "example app"
+  ],
+  "author": "Jean-Maree van Riet",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie": "^0.4.0",
@@ -20,5 +27,8 @@
     "morgan": "~1.9.1",
     "nodemon": "^2.0.3",
     "request": "^2.88.2"
+  },
+  "engines": {
+    "node": "12.16.1"
   }
 }
