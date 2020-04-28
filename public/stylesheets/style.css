@@ -9,9 +9,6 @@
 html, body {
   padding: 0 !important;
   margin: 0 !important;
-}
-
-html {
   min-height: 100vh;
 }
 
@@ -92,6 +89,7 @@ main {
 
 /* FOOTER: */
 footer {
+  margin-top: auto;
   background-color: var(--cg-blue);
   height: 250px;
   padding-top: 30px;

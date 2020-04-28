@@ -14,7 +14,17 @@ router.get('/', function(req, res){
   res.render('register', data);
 });
 
-router.post('/', function(req, res){
+router.post('/', 
+[
+  check('email').isEmail(), 
+  check('password').isLength({min:3})
+], 
+function(req, res){
+  const errors = validationResult(req);
+  if(!errors.isEmpty()){
+    return res.status(422).json({ errors: errors.array() });
+  }
+
   let newUserID = allUsers.length + 1;
   request({
     url: "http://localhost:3000/allUsers/",
