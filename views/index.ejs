@@ -28,8 +28,12 @@
       <% }; %>
     </div>
   </section>
-
-  <h2 class="m-5">Create a new post <span><a href="/create-post">Here!</a></span></h2>
+  <!-- Check if user is logged in, in order to give them the appropriate slection: -->
+  <% if(login > 0) { %>
+    <h2 class="m-5">Create a new post :<%= login %>:<span><a href="/create-post">Here!</a></span></h2>
+  <% } else { %>
+    <h2 class="m-5">Want to create a post? <span><a href="/register">Sign up here!</a></span></h2>
+  <% } %>
   
 </main>
 

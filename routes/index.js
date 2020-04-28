@@ -45,6 +45,9 @@ router.get('/', function(req, res, next) {
 
 // Need to make this function centralised somewhere. Doesnt work app.js or in separate js...
 // Login cookies are being checked against flags set in /routes/login.js
+// Flags:
+//     -1: No user has logged in - there is either no cookie like "checkLogin" or it is blank.
+//     -2: The user attempted to sign in, but was unsuccsesful.
 function checkCookies(cookies) {
   console.log("Cookies: ", cookies);
   let loggedInAs = cookies.checkLogin;
