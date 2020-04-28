@@ -6,18 +6,16 @@
                 <div class="mx-auto">
                     <div class="post-holder text-left">
                         <div class="post-image shadow">
-                            <div>
+                            <div class="form-group m-0">
                                 <img src="<%= featured_img %>">
-                                <div class="form-group row mb-0 ml-1">
-                                    <label for="imageInput"><strong>Featured Image:</strong></label>
-                                    <input type="text" id="imageInput" name="imageInput" value="<%= featured_img %>">
-                                </div>
+                                <label for="postImage"><strong>Featured Image:</strong></label>
+                                <input type="text" id="imageInput" name="postImage" value="<%= featured_img %>">
                             </div>
                         </div>
                         <div class="post-text">
                             <div class="post-div p-4 m-4 shadow">
                                 <input style="font-size: 16px;" name="postTitle" type="text" class="form-control" id="titleInput" value="<%= title %>" required>
-                                <textarea name="postSubtitle" id="postSubtitle" cols="30" rows="3" maxlength="100" value="<%= subtitle %>"></textarea>
+                                <textarea name="postSubtitle" id="postSubtitle" cols="30" rows="3" maxlength="100"><%= subtitle %></textarea>
                             </div>
                         </div>
                     </div>
@@ -26,24 +24,22 @@
         </article>
         <article class="mb-4">
             <div class="form-group">
-                <div class="row">
+                <div class="row text-left">
                     <div class="col">
                         <label for="authorInput"><strong>Author</strong></label>
                         <input name="postAuthor" type="text" class="form-control is-valid" id="auhtorInput" value="Jean-Maree" required>
                     </div>
                     <div class="col">
-                        <label for="imageInput"><strong>Featured Image</strong></label>
+                        <!-- <label for="imageInput"><strong>Featured Image</strong></label>
                         <input name="postImage" type="text" class="form-control" id="imageInput" placeholder="www.google.com/images/yourimage">
-                        <small >
-                            Please insert a url to the web image. Can't yet upload local imagery.
-                        </small>
+                         -->
                     </div>
                 </div>
             </div>
         </article>
         <!-- Summernote area: -->
         <article class="summernote-article mb-4">
-            <textarea id="summernote" name="editordata"></textarea>
+            <textarea id="summernote" name="editordata"><%= content %></textarea>
         </article>
         <div class="clearfix">
             <button class="btn btn-primary align-right">Publish</button>

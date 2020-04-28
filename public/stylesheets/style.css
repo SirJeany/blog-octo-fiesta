@@ -11,6 +11,10 @@ html, body {
   margin: 0 !important;
 }
 
+html {
+  min-height: 100vh;
+}
+
 body {
   font: 14px 'Be Vietnam', sans-serif, Helvetica, Arial !important;
 }
