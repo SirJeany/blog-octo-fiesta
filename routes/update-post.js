@@ -19,7 +19,7 @@ router.get('/:postId', function(req, res, next){
 
 
 router.post('/:postId', function(req, res, next){
-  console.log("req.body.postTitle = " + req.body.postTitle);
+  console.log("req.param = " + req.param('postId'));
   request({
     url: "http://localhost:8000/myPosts/" + req.params.postId,
     method: "PATCH",
