@@ -4,6 +4,7 @@ const myPosts = require('../myPosts.json').myPosts;
 const request = require('request');
 
 router.get('/:postId', function(req, res, next){
+  // ToDo: Loop through posts to find that id (currently referencing the index via id)
   let post = myPosts[req.params.postId-1];
   let login_as = checkCookies(req.cookies);
   let data = {
@@ -38,10 +39,13 @@ router.post('/:postId', function(req, res, next){
 
 router.post('/delete/:postId', function(req, res, next){
   request({
-    url: ""
-  })
+    url: "http://localhost:8000/myPosts/" + req.params.postId,
+    method: "DELETE"
+  }, function(error, response, body){
+    console.log(response.body);
+  });
   
-  // res.redirect('/');
+  res.redirect('/');
 });
 
 function checkCookies(cookies) {

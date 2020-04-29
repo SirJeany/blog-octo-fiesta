@@ -7,8 +7,9 @@ router.get('/:postId', function(req, res, next){
   // The workaround for showing the updates on the page after redirecting.
   // Otherwise after maling the patch request, the user would need to refresh page.
   setTimeout(() => {
+    // ToDo: Loop through posts to find that id (currently referencing the index via id)
     id = req.params.postId;
-    post = allPosts.myPosts[id-1]; //We should look though and find the id rather than this
+    post = allPosts.myPosts[id-1]; 
     let data = {
       postId: id,
       title: post.title,
