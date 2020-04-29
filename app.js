@@ -11,6 +11,7 @@ let indexRouter = require('./routes/index');
 let viewPostRouter = require('./routes/view-post');
 let createPostRouter = require('./routes/create-post');
 let updatePostRouter = require('./routes/update-post');
+let deletePostRouter = require('./routes/update-post');
 let registerRouter = require('./routes/register');
 let loginRouter = require('./routes/login');
 let archivesRouter = require('./routes/archives');
@@ -42,9 +43,10 @@ app.use('/', indexRouter);
 app.use('/view-post', viewPostRouter);
 app.use('/create-post', createPostRouter);
 app.use('/update-post', updatePostRouter);
+app.use('/update-post/delete', deletePostRouter);
 app.use('/register', registerRouter);
 app.use('/login', loginRouter);
-app.use('/archives', archivesRouter)
+app.use('/archives', archivesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

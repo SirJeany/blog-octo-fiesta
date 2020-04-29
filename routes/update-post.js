@@ -7,6 +7,7 @@ router.get('/:postId', function(req, res, next){
   let post = myPosts[req.params.postId-1];
   let login_as = checkCookies(req.cookies);
   let data = {
+    id: post.id,
     title: post.title,
     subtitle: post.subtitle,
     featured_img: post.featured_img,
@@ -19,7 +20,6 @@ router.get('/:postId', function(req, res, next){
 
 
 router.post('/:postId', function(req, res, next){
-  console.log("req.param = " + req.param('postId'));
   request({
     url: "http://localhost:8000/myPosts/" + req.params.postId,
     method: "PATCH",
@@ -30,20 +30,18 @@ router.post('/:postId', function(req, res, next){
       content: req.body.editordata
     }
   },function(error, response, body){
-    console.log("The new body:", body);
+    console.log("Updated post, " + JSON.stringify(body.title));
   });
   
   res.redirect('/view-post/'+req.params.postId);
+});
+
+router.post('/delete/:postId', function(req, res, next){
+  request({
+    url: ""
+  })
   
-  // TRIED--> Workaround for directing to updated post (user needs to refresh currently).
-  // let post = myPosts[req.params.postId-1];
-  // let data = {
-  //     postId: post.id,
-  //     title: post.title,
-  //     content: post.content
-  // }
-  // 
-  // res.render.apply('/view-post/'+req.params.postId, {message: "Successful", data});
+  // res.redirect('/');
 });
 
 function checkCookies(cookies) {

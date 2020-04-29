@@ -1,6 +1,6 @@
 <%- include('start_html') %>
 <main class="container text-center clearfix mb-4">
-    <form method="post" class="mb-2">
+    <form method="post" action="/update-post/<%= id %>" class="mb-2">
         <article class="carousel-container mx-auto">
             <div class="post-carousel">
                 <div class="mx-auto">
@@ -45,7 +45,7 @@
             <button class="btn btn-primary align-right">Publish</button>
         </div>
     </form>
-    <form action="post" class="clearfix">
+    <form method="post" action="/update-post/delete/<%= id %>" class="clearfix">
         <button class="btn btn-danger align-right">Delete</button>
     </form>
 </main>
