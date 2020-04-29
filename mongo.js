@@ -1,9 +1,10 @@
+// https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb--how-to-get-connected-to-your-database
 const {MongoClient} = require('mongodb');
 
 async function main() {
     // Connection uri to my clusture
     const uri = "mongodb+srv://blog_man:s12572@blog-cluster-8ad2j.mongodb.net/test?retryWrites=true&w=majority";
-
+    
     // Instance of the Mongo client
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 

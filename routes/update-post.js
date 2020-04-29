@@ -42,7 +42,7 @@ router.post('/delete/:postId', function(req, res, next){
     url: "http://localhost:8000/myPosts/" + req.params.postId,
     method: "DELETE"
   }, function(error, response, body){
-    console.log(response.body);
+    console.log(JSON.stringify(error));
   });
   
   res.redirect('/');
