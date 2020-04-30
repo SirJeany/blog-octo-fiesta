@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-let myMongo = require('../mongo.js');
 
-router.get('/', function(req, res, next){
+router.get('/', async function(req, res, next){
 
-})
+    res.send('Going to create a listing now...');
+});
 
 module.exports = router;

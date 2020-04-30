@@ -6,6 +6,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 var cookie = require('cookie');
 let session = require('express-session');
+const MongoClient = require('mongodb').MongoClient;
 
 let indexRouter = require('./routes/index');
 let viewPostRouter = require('./routes/view-post');
@@ -29,17 +30,34 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
 // NECESSARY FOR USING THE 'body' WHEN RENDERING
 //support parsing of application/x-www-form-urlencoded post data
 app.use(bodyParser.urlencoded({ extended: true }));
 // support parsing of application/json type post data
 app.use(bodyParser.json());
+
 // Session for login:
 app.use(session({
-	secret: 'secret',
-	resave: true,
-	saveUninitialized: true
+  secret: 'secret',
+  resave: true,
+  saveUninitialized: true
 }));
+
+// MONGODB SETUP:
+const uri = "mongodb+srv://blog_man:s12572@blog-cluster-8ad2j.mongodb.net/test?retryWrites=true&w=majority";
+/**
+* The Mongo Client you will use to interact with your database
+* See bit.ly/Node_MongoClient for more details
+*/
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+// Making use of promises
+client.connect().then(client =>{
+  console.log('Connected to the db...');
+  const db = client.db('my_blog');
+  app.use(db);
+})
+.catch(error => console.error(error));
 
 app.use('/', indexRouter);
 app.use('/view-post', viewPostRouter);
@@ -50,7 +68,7 @@ app.use('/register', registerRouter);
 app.use('/login', loginRouter);
 app.use('/archives', archivesRouter);
 // Mongo DB testing:
-app.use('/create-listing');
+app.use('/create-listing', createListingRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -62,7 +80,7 @@ app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
-
+  
   // render the error page
   res.status(err.status || 500);
   res.render('error');
