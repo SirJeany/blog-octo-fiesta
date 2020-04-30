@@ -15,6 +15,8 @@ let deletePostRouter = require('./routes/update-post');
 let registerRouter = require('./routes/register');
 let loginRouter = require('./routes/login');
 let archivesRouter = require('./routes/archives');
+// Testing mongoDB:
+let createListingRouter = require('./routes/create-listing');
 
 var app = express();
 
@@ -47,6 +49,8 @@ app.use('/update-post/delete', deletePostRouter);
 app.use('/register', registerRouter);
 app.use('/login', loginRouter);
 app.use('/archives', archivesRouter);
+// Mongo DB testing:
+app.use('/create-listing');
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
