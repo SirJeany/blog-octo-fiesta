@@ -50,14 +50,18 @@ const uri = "mongodb+srv://blog_man:s12572@blog-cluster-8ad2j.mongodb.net/test?r
 * The Mongo Client you will use to interact with your database
 * See bit.ly/Node_MongoClient for more details
 */
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-// Making use of promises
-client.connect().then(client =>{
-  console.log('Connected to the db...');
-  const db = client.db('my_blog');
-  app.use(db);
-})
-.catch(error => console.error(error));
+// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+// // Making use of promises
+// client.connect().then(client =>{
+//   const db = client.db('my_blog');
+//   const myPostCollection = db.collection('my_posts');
+//   console.log('Connected to the db... ');
+//   // app.use(db);
+// })
+// .catch(error => console.error(error));
+
+let mongo = require('./mongo');
+app.use('/',mongo)
 
 app.use('/', indexRouter);
 app.use('/view-post', viewPostRouter);
