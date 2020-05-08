@@ -45,7 +45,7 @@ app.use(session({
 }));
 
 // MONGODB SETUP:
-const uri = "mongodb+srv://blog_man:s12572@blog-cluster-8ad2j.mongodb.net/test?retryWrites=true&w=majority";
+// const uri = "mongodb+srv://blog_man:s12572@blog-cluster-8ad2j.mongodb.net/test?retryWrites=true&w=majority";
 /**
 * The Mongo Client you will use to interact with your database
 * See bit.ly/Node_MongoClient for more details
@@ -61,7 +61,7 @@ const uri = "mongodb+srv://blog_man:s12572@blog-cluster-8ad2j.mongodb.net/test?r
 // .catch(error => console.error(error));
 
 let mongo = require('./mongo');
-app.use('/',mongo)
+// app.use('/', mongo);
 
 app.use('/', indexRouter);
 app.use('/view-post', viewPostRouter);
