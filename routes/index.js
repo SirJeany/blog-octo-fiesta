@@ -23,7 +23,7 @@ router.get('/', function(req, res, next) {
   
   setTimeout(() => {
     request.get(
-      'http://localhost:8000/myPosts/',
+      'http://localhost:8080/myPosts/',
       function(error, response, body) {
         let data = {
           title: "TravelevarT",
