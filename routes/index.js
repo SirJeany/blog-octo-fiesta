@@ -2,7 +2,7 @@ let express = require('express');
 let router = express.Router();
 let request = require('request');
 // let cookie = require('cookie');
-let users = require('../users.json').allUsers;
+// let users = require('../users.json').allUsers;
 // import {checkCookies} from 'loginFunc.js';
 
 //TEST NExt: It kinda works. But how do we send data through?
@@ -23,7 +23,7 @@ router.get('/', function(req, res, next) {
   
   setTimeout(() => {
     request.get(
-      'http://localhost:8080/myPosts/',
+      'http://localhost:8000/myPosts/',
       function(error, response, body) {
         let data = {
           title: "TravelevarT",

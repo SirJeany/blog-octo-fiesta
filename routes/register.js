@@ -1,7 +1,7 @@
 let express = require('express');
 let router = express.Router();
 let request = require('request');
-let allUsers = require('../users.json').allUsers;
+let allUsers = require('../myPosts.json').allUsers;
 const { check, validationResult } = require('express-validator');
 
 router.get('/', function(req, res){
@@ -27,7 +27,7 @@ function(req, res){
 
   let newUserID = allUsers.length + 1;
   request({
-    url: "http://localhost:3000/allUsers/",
+    url: "http://localhost:8000/allUsers/",
     method: "POST",
     form: {
       id: newUserID,
