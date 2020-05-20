@@ -4,6 +4,7 @@
 
 :root {
   --cg-blue: #2978A0;
+  --message-green: rgba(21, 255, 0, 0.171);
 }
 
 html {
@@ -67,6 +68,14 @@ header {
   padding: .375rem .75rem;
   font-size: 1rem;
   line-height: 1.5;
+}
+
+/* Message box for displaying warnings or errors to the user: */
+.message-box{
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0px;
+  background-color: var(--message-green);
 }
 
 /* https://www.steckinsights.com/shorten-length-border-bottom-pure-css/ */
