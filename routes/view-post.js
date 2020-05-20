@@ -13,6 +13,7 @@ router.get('/:postId', function(req, res, next){
     let data = {
       postId: id,
       title: post.title,
+      subtitle: post.subtitle,
       content: post.content,
       featured_img: post.featured_img,
       author: post.author,

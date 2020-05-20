@@ -2,6 +2,15 @@
   "myPosts": [
     {
       "id": 1,
+      "title": "A little bit about Unsplash",
+      "subtitle": "Here I'm using Unsplash images to fill in - this way I'll be focused on the project.",
+      "content": "<p>Unsplash images made my life a lot easier whilst providing me project with crisp, fresh images constantly. I believe that it is worthwhile to delve into the API to reap the following benefits:</p><ul><li>&nbsp; - Categories: I'll be able to select exactly which kinds of images I want.</li></ul><p>&nbsp; - Responsiveness: Improved responsiveness from images.</p><p>Hopefully this way I can continue to use stock images whilst focusing on the blog.</p>",
+      "featured_img": "http://unsplash.it/400/300",
+      "author": "Jean-Maree",
+      "published_date": "24 April - 2020"
+    },
+    {
+      "id": 2,
       "title": "My first post",
       "subtitle": "I should say bye to the bird...",
       "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus tellus in augue finibus, sit amet blandit sapien egestas. Nullam tempor auctor lacus aliquet ornare. Morbi maximus gravida ligula, sed scelerisque dolor dictum at. Aenean nisi felis, tempus non porttitor eget, consectetur sagittis ipsum. Cras dapibus purus in fringilla placerat. Curabitur faucibus nibh et nisi varius aliquam. Aliquam erat volutpat. Vestibulum faucibus purus arcu, ut tincidunt magna vehicula at. Proin lobortis consequat risus, id eleifend dolor sollicitudin a. Nunc suscipit nec orci quis fermentum. Donec at dictum nunc. Proin et interdum ex. Donec aliquam urna vitae orci feugiat ullamcorper. Proin facilisis mattis ornare. Praesent in quam varius, tempor orci et, pharetra nisi. Etiam at lectus et dui pharetra auctor.</p><p><br></p><table class=\"table table-bordered\"><tbody><tr><td>HELLO GOGO</td></tr></tbody></table><p><br></p>",
@@ -10,7 +19,7 @@
       "published_date": "11 April - 2020"
     },
     {
-      "id": "2",
+      "id": "3",
       "title": "My Second post! - Update",
       "subtitle": "This is about my second post. The reader will know that I have traveled on mulitple occasions to India. It was then that I saw him",
       "content": "<p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif;\">Maecenas ultricies ipsum consectetur dignissim malesuada. Nunc non fringilla leo. Praesent viverra, lorem id posuere pellentesque, sem eros rhoncus lectus, nec iaculis enim erat eu lectus. In dolor massa, rutrum cursus sagittis quis, dictum vitae dui. Pellentesque eu ante dictum tellus cursus eleifend eget id turpis. Ut eu urna non libero bibendum ullamcorper. Curabitur luctus tortor tortor. Nullam finibus eros nunc.</p><p style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif;\">Maecenas vel molestie neque, non sollicitudin risus. Etiam vel sem elementum orci placerat elementum ut id ex. Proin odio elit, facilisis at mi non, fermentum aliquet magna. Aliquam erat volutpat. Sed quis velit ligula. Vivamus nec molestie risus, quis bibendum lorem. Aliquam pulvinar leo vitae magna egestas feugiat. Aenean bibendum risus eros.</p>",
@@ -19,20 +28,11 @@
       "published_date": "13 April - 2020"
     },
     {
-      "id": "3",
+      "id": "4",
       "title": "Third post - test",
       "subtitle": "This is about my THIRD post. I have traveled on multiple occasions to India",
       "content": "<div style=\"color: rgb(212, 212, 212); font-family: Consolas, &quot;Courier New&quot;, monospace; line-height: 19px; white-space: pre;\"><div style=\"\"><span style=\"background-color: rgb(206, 0, 0);\">Lorem ispum</span></div><div style=\"\">What else to say...</div></div>",
       "featured_img": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/02/04/16/himalayas-mountains.jpg",
-      "author": "Jean-Maree",
-      "published_date": "24 April - 2020"
-    },
-    {
-      "id": "4",
-      "title": "A little bit about Unsplash",
-      "subtitle": "Here I'm using Unsplash images to fill in - this way I'll be focused on the project.",
-      "content": "<p>Unsplash images made my life a lot easier whilst providing me project with crisp, fresh images constantly. I believe that it is worthwhile to delve into the API to reap the following benefits:</p><ul><li>&nbsp; - Categories: I'll be able to select exactly which kinds of images I want.</li></ul><p>&nbsp; - Responsiveness: Improved responsiveness from images.</p><p>Hopefully this way I can continue to use stock images whilst focusing on the blog.</p>",
-      "featured_img": "http://unsplash.it/400/300",
       "author": "Jean-Maree",
       "published_date": "24 April - 2020"
     }

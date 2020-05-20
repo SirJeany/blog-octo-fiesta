@@ -1,10 +1,11 @@
 <%- include('start_html') %>
 <main class="container">
-    <h2 class="display-3 mb-3"><%= title %></h1>
+    <h2 class="display-4 mb-3 text-center"><%= title %></h2>
     <div class="">
         <img style="width: 500px; height: 400px;" src="<%= featured_img %>" alt="">
-        <p class="font-weight-light mb-5"><%= author %> <span class="ml-auto"><%= published_date %></span></p>
-        <div class="text-center"><%- content %></div>
+        <p class="font-weight-light mb-3"><%= author %> <span class="ml-auto"><%= published_date %></span></p>
+        <h5><%- subtitle %></h5>
+        <div><%- content %></div>
     </div>
 
     <% if(login != -1 && login != -2) { %>
