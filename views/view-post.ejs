@@ -6,10 +6,11 @@
         <p class="font-weight-light mb-5"><%= author %> <span class="ml-auto"><%= published_date %></span></p>
         <div class="text-center"><%- content %></div>
     </div>
+
+    <section class="mb-4">
+        <a class="btn btn-warning" href="/update-post/<%= postId %>">Update</a>
+    </section>
 </main>
-<section class="container mb-4">
-    <a class="btn btn-warning" href="/update-post/<%= postId %>">Update</a>
-</section>
 
 <!-- Footer -->
 <%- include('footer') %>

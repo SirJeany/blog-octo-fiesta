@@ -6,10 +6,17 @@
   --cg-blue: #2978A0;
 }
 
-html, body {
+html {
   padding: 0 !important;
   margin: 0 !important;
-  min-height: 100vh;
+  height: 100%;
+}
+
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: 100%;
+  position: relative;
 }
 
 body {
@@ -24,7 +31,7 @@ a:hover {
   color: inherit !important;
   text-decoration: none !important;
 }
-
+ 
 ul {
   list-style-type: none;
   margin: 0;
@@ -84,12 +91,16 @@ header {
 /* MAIN */
 main {
   margin-top: 22px;
+  padding-bottom: 250px; /* Needs to be same as footer height */
 }
 
 
 /* FOOTER: */
+/* How to keep the footer down on small pages: https://matthewjamestaylor.com/bottom-footer */
 footer {
-  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: var(--cg-blue);
   height: 250px;
   padding-top: 30px;
