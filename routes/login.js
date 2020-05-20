@@ -1,7 +1,7 @@
 let express = require('express');
 let router = express.Router();
 let request = require('request');
-let Users = require('../users.json').allUsers;
+let Users = require('../myPosts.json').allUsers;
 
 router.get('/', function(req, res){
     let email = req.session.email.toLowerCase();

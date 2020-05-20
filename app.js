@@ -91,4 +91,7 @@ app.use(function(err, req, res, next) {
 });
 
 // app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+// module.exports = app;
+
 module.exports = app;
+app.listen(8080);

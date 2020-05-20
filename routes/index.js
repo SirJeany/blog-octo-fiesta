@@ -2,7 +2,7 @@ let express = require('express');
 let router = express.Router();
 let request = require('request');
 // let cookie = require('cookie');
-let users = require('../users.json').allUsers;
+// let users = require('../users.json').allUsers;
 // import {checkCookies} from 'loginFunc.js';
 
 //TEST NExt: It kinda works. But how do we send data through?
