@@ -10,6 +10,6 @@ let logoutBtn = document.getElementById('logoutBtn');
 
 if(logoutBtn) {
     logoutBtn.addEventListener('click', () =>{ 
-        document.cookie = "checkLogin=;";
+        document.cookie = "checkLogin=;path=/;";
     });
 }

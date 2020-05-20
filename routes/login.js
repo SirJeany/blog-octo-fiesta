@@ -21,7 +21,8 @@ router.get('/', function(req, res){
         res.cookie('checkLogin', 'invalid_login');
     }
     
-    res.redirect('/')
+    // res.redirect('/')
+    res.redirect(req.get('referer')); // Refresh current page 
 });
 
 router.post('/', function(req, res){

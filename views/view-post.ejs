@@ -7,9 +7,11 @@
         <div class="text-center"><%- content %></div>
     </div>
 
+    <% if(login != -1 && login != -2) { %>
     <section class="mb-4">
         <a class="btn btn-warning" href="/update-post/<%= postId %>">Update</a>
     </section>
+    <% } %>
 </main>
 
 <!-- Footer -->
