@@ -7,9 +7,8 @@ $(document).ready(function() {
         autoplay: false,
         autoplaySpeed: 1000,
         variableWidth: true,
-        // prevArrow: false,
-        // nextArrow: '.next-course',
-        arrows: true,
+        prevArrow: '.fa-caret-square-left',
+        nextArrow: '.fa-caret-square-right',
         dots: true,
         pauseOnHover: true
         // responsive: [

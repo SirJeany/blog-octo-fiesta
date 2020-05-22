@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon -e ejs,json,js,css  --exec \"npm run myapp\"",
+    "myapp" : "node ./bin/www"
   },
   "keywords": [
     "blog",

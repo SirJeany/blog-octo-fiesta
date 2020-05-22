@@ -1,6 +1,10 @@
 /* Specific for index.ejs */
 
 /* DISPLAYED POSTS: */
+.carousel-wrapper {
+    width: 100%;
+}
+
 .carousel-container {
     width:710px;
 }
@@ -46,4 +50,19 @@
     -webkit-line-clamp: 3;
     /* hide the overflowing text, i.e, texts that did not fit in to the box */
     overflow: hidden;
+}
+
+/* Carousel Arrows: */
+.fa-caret-square-left {
+    color: #ffc107;
+}
+
+.fa-caret-square-right {
+    color: #ffc107;
+}
+
+.arrow-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

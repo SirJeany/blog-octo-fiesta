@@ -6,37 +6,51 @@
   <h1><%= title %></h1>
   <p>Welcome to my blog, <%= title %></p>
   
-  <section class="carousel-container mx-auto mb-5">
-    <div class="post-carousel">
-      <% for(let i = 0; i < 3 && posts[i]; i++){ %>
-        <div class="mx-auto">
-          <div class="post-holder text-left">
-            <div class="post-image shadow">
-              <a href="/view-post/<%= posts[i].id %>"><img src="<%= posts[i].featured_img %>"></a>
-            </div>
-            <div class="post-text">
-              <div class="post-div p-4 m-4 shadow">
-                <h4 class="mb-2"><%= posts[i].title %></h4>
-                <span class="post-content mb-2"><%= posts[i].subtitle %></span>
-                <a href="/view-post/<%= posts[i].id %>" class="mb-2">Let's see the post then!</a>
-                <br>
-                <small><%= posts[i].published_date %></small>
+  <!-- Posts Carousel -->
+  <div class="mb-5 row">
+    <div class="col-1 arrow-wrapper">
+      <i class="far fa-caret-square-left"></i>
+    </div>
+    <div class="col-10">
+      <section class="carousel-container mx-auto">
+        <div class="post-carousel">
+          <% for(let i = 0; i < 3 && posts[i]; i++){ %>
+            <div class="mx-auto">
+              <div class="post-holder text-left">
+                <div class="post-image shadow">
+                  <a href="/view-post/<%= posts[i].id %>"><img src="<%= posts[i].featured_img %>"></a>
+                </div>
+                <div class="post-text">
+                  <div class="post-div p-4 m-4 shadow">
+                    <h4 class="mb-2"><%= posts[i].title %></h4>
+                    <span class="post-content mb-2"><%= posts[i].subtitle %></span>
+                    <a href="/view-post/<%= posts[i].id %>" class="mb-2">Let's see the post then!</a>
+                    <br>
+                    <small><%= posts[i].published_date %></small>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          <% }; %>
         </div>
-      <% }; %>
+      </section>
     </div>
-  </section>
+    <div class="col-1 arrow-wrapper">
+      <i class="far fa-caret-square-right"></i>
+    </div>
+  </div>
   <!-- Check if user is logged in, in order to give them the appropriate slection: -->
-  <% if(login > 0) { %>
-    <h2 class="m-5">Create a new post :<%= login %>:<span><a href="/create-post">Here!</a></span></h2>
+  <% if(login != -1 && login != -2) { %>
+    <h2 class="m-5">Create a new post <span><a href="/create-post">Here!</a></span></h2>
   <% } else { %>
     <h2 class="m-5">Want to create a post? <span><a href="/register">Sign up here!</a></span></h2>
   <% } %>
   
 
-  <h2 class="m-5">Create new listing here: <span><a href="/create-listing">New Listing</a></span></h2>
+  <div class="m-5 yellow-box" >
+    <small>Testing for MongoDB</small>
+    <h2>Create new listing here <span><a href="/create-listing">New Listing</a></span></h2>
+  </div>
 </main>
 
 <!-- Footer -->

@@ -4,6 +4,7 @@
 
 :root {
   --cg-blue: #2978A0;
+  --amber: #ffc107;
   --message-green: rgba(21, 255, 0, 0.171);
 }
 
@@ -68,6 +69,11 @@ header {
   padding: .375rem .75rem;
   font-size: 1rem;
   line-height: 1.5;
+}
+
+.yellow-box {
+  border-radius: 10px;
+  border: 2px solid var(--amber);
 }
 
 /* Message box for displaying warnings or errors to the user: */
