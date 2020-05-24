@@ -45,9 +45,12 @@
             <button class="btn btn-primary align-right">Publish</button>
         </div>
     </form>
-    <form method="post" action="/update-post/delete/<%= id %>" class="clearfix mb-3">
+    <form method="post" action="/update-post/delete/<%= post.id %>" class="clearfix mb-3">
         <button class="btn btn-danger align-right">Delete</button>
     </form>
+    <div class="clearfix mb-3">
+        <a class="btn btn-warning align-right" href="/view-post/<%= post.id %>">Cancel</a>
+    </div>
 </main>
 
 <!-- Footer -->
