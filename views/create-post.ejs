@@ -2,56 +2,56 @@
 <main class="container text-center">
     <h1><%= title %></h1>
     
+    <section class="container mb-5">
+        <form method="post">
+            <article class="carousel-container mx-auto">
+                <div class="post-carousel">
+                    <div class="mx-auto">
+                        <div class="post-holder text-left">
+                            <div class="post-image shadow">
+                                <div>
+                                    <img src="http://unsplash.it/400/300">
+                                    <!-- <img src="https://place-hold.it/400x300/aaa/000/white&text=Your%20feature%20img&fontsize=14" alt="Your featured img 400x300"> -->
+                                    <span style="z-index: 1; position: relative;">Featured image example. 400x300</span>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <div class="post-div p-4 m-4 shadow">
+                                    <input style="font-size: 16px;" name="postTitle" type="text" class="form-control" id="titleInput" placeholder="Post title" required>
+                                    <textarea name="postSubtitle" id="postSubtitle" cols="30" rows="3" maxlength="100" placeholder="Subtitle. Max 3 lines ~ 100 characters"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="mb-4">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <label for="authorInput"><strong>Author</strong></label>
+                            <input name="postAuthor" type="text" class="form-control is-valid" id="auhtorInput" value="Jean-Maree" required>
+                        </div>
+                        <div class="col">
+                            <label for="imageInput"><strong>Featured Image</strong></label>
+                            <input name="postImage" type="text" class="form-control" id="imageInput" placeholder="www.google.com/images/yourimage">
+                            <small >
+                                Please insert a url to the web image. Can't yet upload local imagery.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Summernote area: -->
+            <article class="summernote-article mb-4">
+                <textarea id="summernote" name="editordata"></textarea>
+            </article>
+            <div class="clearfix">
+                <button class="btn btn-primary align-right">Publish</button>
+            </div>
+        </form>
+    </section>
 </main>
-<section class="container mb-5">
-    <form method="post">
-        <article class="carousel-container mx-auto">
-            <div class="post-carousel">
-                <div class="mx-auto">
-                    <div class="post-holder text-left">
-                        <div class="post-image shadow">
-                            <div>
-                                <img src="http://unsplash.it/400/300">
-                                <!-- <img src="https://place-hold.it/400x300/aaa/000/white&text=Your%20feature%20img&fontsize=14" alt="Your featured img 400x300"> -->
-                                <span style="z-index: 1; position: relative;">Featured image example. 400x300</span>
-                            </div>
-                        </div>
-                        <div class="post-text">
-                            <div class="post-div p-4 m-4 shadow">
-                                <input style="font-size: 16px;" name="postTitle" type="text" class="form-control" id="titleInput" placeholder="Post title" required>
-                                <textarea name="postSubtitle" id="postSubtitle" cols="30" rows="3" maxlength="100" placeholder="Subtitle. Max 3 lines ~ 100 characters"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <article class="mb-4">
-            <div class="form-group">
-                <div class="row">
-                    <div class="col">
-                        <label for="authorInput"><strong>Author</strong></label>
-                        <input name="postAuthor" type="text" class="form-control is-valid" id="auhtorInput" value="Jean-Maree" required>
-                    </div>
-                    <div class="col">
-                        <label for="imageInput"><strong>Featured Image</strong></label>
-                        <input name="postImage" type="text" class="form-control" id="imageInput" placeholder="www.google.com/images/yourimage">
-                        <small >
-                            Please insert a url to the web image. Can't yet upload local imagery.
-                        </small>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <!-- Summernote area: -->
-        <article class="summernote-article mb-4">
-            <textarea id="summernote" name="editordata"></textarea>
-        </article>
-        <div class="clearfix">
-            <button class="btn btn-primary align-right">Publish</button>
-        </div>
-    </form>
-</section>
 
 <!-- Footer -->
 <%- include('footer') %>
