@@ -71,9 +71,12 @@ header {
   line-height: 1.5;
 }
 
+/* A greyed out box with a yellow outline */
 .yellow-box {
   border-radius: 10px;
   border: 2px solid var(--amber);
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* msie */
 }
 
 /* Message box for displaying warnings or errors to the user: */
