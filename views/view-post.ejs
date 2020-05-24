@@ -1,16 +1,16 @@
 <%- include('start_html') %>
 <main class="container">
-    <h2 class="display-4 mb-3 text-center"><%= title %></h2>
+    <h2 class="display-4 mb-3 text-center"><%= post.title %></h2>
     <div class="">
-        <img style="width: 500px; height: 400px;" src="<%= featured_img %>" alt="">
-        <p class="font-weight-light mb-3"><%= author %> <span class="ml-auto"><%= published_date %></span></p>
-        <h5><%- subtitle %></h5>
-        <div><%- content %></div>
+        <img style="width: 500px; height: 400px;" src="<%= post.featured_img %>" alt="">
+        <p class="font-weight-light mb-3"><%= post.author %> <span class="ml-auto"><%= post.published_date %></span></p>
+        <h5><%- post.subtitle %></h5>
+        <div><%- post.content %></div>
     </div>
 
     <% if(login != -1 && login != -2) { %>
     <section class="mb-4">
-        <a class="btn btn-warning" href="/update-post/<%= postId %>">Update</a>
+        <a class="btn btn-warning" href="/update-post/<%= post.postId %>">Update</a>
     </section>
     <% } %>
 </main>

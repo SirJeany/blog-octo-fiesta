@@ -33,14 +33,9 @@ router.get('/', function(req, res, next) {
         // console.log("Body of second: ", JSON.parse(body));
         res.render('index', data);
       }
-    );
-    // let data = {
-    //   title: "Home",
-    //   login: login_as[0],
-    //   user_type: login_as[1]
-    // }
-    // res.render('index', data);
+    )
   }, 200);
+
 });
 
 // Need to make this function centralised somewhere. Doesnt work app.js or in separate js...
