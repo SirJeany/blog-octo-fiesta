@@ -1,22 +1,26 @@
 const express = require('express');
 const router = express.Router();
-const myPosts = require('../myPosts.json').myPosts;
 const request = require('request');
 
 router.get('/:postId', function(req, res, next){
-  // ToDo: Loop through posts to find that id (currently referencing the index via id)
-  let post = myPosts[req.params.postId-1];
   let login_as = checkCookies(req.cookies);
-  let data = {
-    id: post.id,
-    title: post.title,
-    subtitle: post.subtitle,
-    featured_img: post.featured_img,
-    content: post.content,
-    login: login_as
-  }
+  id = id = req.params.postId;
   
-  res.render('update-post', data);
+  setTimeout(() => {
+    request.get(
+      'http://localhost:8000/myPosts/' + id,
+      function(error, response, body) {
+        let data = {
+          title: "TravelevarT",
+          login: login_as,
+          message: 0,
+          post: JSON.parse(body)
+        }
+        // console.log("Body of second: ", JSON.parse(body));
+        res.render('update-post', data);
+      }
+    )
+  }, 200);
 });
 
 
