@@ -10,20 +10,14 @@ $(document).ready(function() {
         prevArrow: '.fa-caret-square-left',
         nextArrow: '.fa-caret-square-right',
         dots: true,
-        pauseOnHover: true
-        // responsive: [
-        // {
-        //     breakpoint: 900,
-        //     settings: {
-        //     slidesToShow: 2
-        //     }
-        // },
-        // {
-        //     breakpoint: 560,
-        //     settings: {
-        //     slidesToShow: 1
-        //     }
-        // }
-        // ]
+        pauseOnHover: true,
+        responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                arrows: false
+            }
+        }
+        ]
     });
 });

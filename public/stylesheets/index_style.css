@@ -53,11 +53,7 @@
 }
 
 /* Carousel Arrows: */
-.fa-caret-square-left {
-    color: #ffc107;
-}
-
-.fa-caret-square-right {
+i[class*='fa-caret-square'] {
     color: #ffc107;
 }
 
@@ -65,4 +61,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 991px) {
+    i[class*='fa-caret-square'] {
+        display: none;
+    }
 }

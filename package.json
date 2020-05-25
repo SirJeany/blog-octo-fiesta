@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "nodemon -e ejs,js,css  --exec \"npm run myapp\"",
-    "myapp" : "node ./bin/www"
+    "myapp": "node ./bin/www"
   },
   "keywords": [
     "blog",
