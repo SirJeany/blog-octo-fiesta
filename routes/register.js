@@ -68,12 +68,18 @@ function(req, res, next){
           subscribed_to_newsletter: req.body.newsletterCheckbox ? true : false
         }
       }, function(error, response, body){
-        // res.render('register', {title: "register", message: "Created new user", login: -1})
+        // ToDO: take user to a login page.
         res.redirect('/');
+        // res.render('/register-success');
       });
     }
   });
 });
+
+// When the user has successfully registered. Take them to this page to log in.
+router.get('/register-success', function(req, res) {
+
+})
 
 // Need to make this function centralised somewhere. Doesnt work app.js or in separate js...
 function checkCookies(cookies) {

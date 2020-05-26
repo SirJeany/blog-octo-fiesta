@@ -51,10 +51,10 @@ function(req, res){
     }
   },
   function(error, response, body){
-    console.log("New body: ", JSON.stringify(body));
+    // console.log("New body: ", JSON.stringify(body));
     // res.render.apply('create-post', {message: "Created new post"});
     // console.log("Response: ", response);
-    console.log("Error: ", error);
+    // console.log("Error: ", error);
   });
   console.log("New ID: ", postId);
   res.redirect('view-post/' + postId);

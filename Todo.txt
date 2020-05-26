@@ -1,4 +1,4 @@
-
+ + More informative registration: Have a landing page for newly registered users, asking them to log in.
  + Caorousel on small devices: Perhaps make the image smaller?
 The big move to the general viewer:
  + Landing page should have a short and clear decription of what is being expected of the user.
@@ -12,3 +12,5 @@ Aimee:
 Kristi suggestions:
  + Allow social media handles
  + Fix some sizing issues - some texts just too big, overshadowing other important parts of the page...
+ + Update create a post text
+ + Add new png
