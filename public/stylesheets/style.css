@@ -137,7 +137,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: var(--cg-blue);
+  background-color: var(--logo-orange);
   height: 250px;
   padding-top: 30px;
 }
