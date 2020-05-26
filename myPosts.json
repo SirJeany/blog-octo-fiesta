@@ -73,15 +73,6 @@
       "password": "123",
       "permissions": "RUM",
       "subscribed_to_newsletter": "false"
-    },
-    {
-      "id": "4",
-      "first_name": "Jean",
-      "last_name": "Maree",
-      "email": "nw@email.com",
-      "password": "123",
-      "permissions": "RUM",
-      "subscribed_to_newsletter": "false"
     }
   ]
 }
