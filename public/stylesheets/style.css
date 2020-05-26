@@ -67,6 +67,11 @@ header {
   z-index: 2;
 }
 
+#home-img {
+  width: 62px;
+  height: 44px;
+}
+
 .login-btn {
   display: inline-block;
   color: #212529;
