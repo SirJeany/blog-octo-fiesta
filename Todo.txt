@@ -1,7 +1,5 @@
 
  + Caorousel on small devices: Perhaps make the image smaller?
- + Change login.js to request and not get db info directly
- + Error with adding new posts as create-post increments id by checking db directly
 The big move to the general viewer:
  + Landing page should have a short and clear decription of what is being expected of the user.
  + Should make only you U/D own posts.
