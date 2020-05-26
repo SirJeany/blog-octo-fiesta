@@ -1,7 +1,6 @@
 let express = require('express');
 let router = express.Router();
 let request = require('request');
-let Posts = require('../myPosts.json');
 const { check, validationResult } = require('express-validator');
 
 router.get('/', function(req, res, next){
