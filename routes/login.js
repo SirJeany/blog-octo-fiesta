@@ -29,7 +29,8 @@ router.get('/', function(req, res){
             res.cookie('checkLogin', 'invalid_login', {maxAge: 2000}); // Invalid login message expires
         }
 
-        res.redirect(req.get('referer')); // Refresh current page 
+        // res.redirect(req.get('referer')); // Refresh current page 
+        res.redirect('/');
     });
     
     /*

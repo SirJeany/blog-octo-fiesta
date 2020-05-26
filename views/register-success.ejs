@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title><%= title %></title>
+    <link rel="icon" href="/images/favicon.ico">
+    
+    <!-- My styles: -->
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/index_style.css">
+    
+    <!-- Bootstrap: -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- Summernote: -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css" rel="stylesheet">
+    
+    <!-- Font awesome kit: -->
+    <script src="https://kit.fontawesome.com/a693aed684.js" crossorigin="anonymous"></script>
+    
+    <!-- Slick CSS: -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
+    
+    <!-- Jquery: -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <main class="container-lg text-center">
+        <!-- Hero img -->
+        <div id="logo-div" class="mb-5 mt-3">
+            <h1><img id="logo-main" src="/images/TravelevarT_logo.png" alt="TravelevarT"></h1>
+        </div>
+
+        <!-- Login section -->
+        <div class="text-center m-5">
+            <h3>Cangratualtions on signing up 👏</h3>
+            <br>
+            <h4>Please log into your new account with your email and password to complete the registration</h4>
+        </div>
+        <div class="row">
+            <form method="POST" class="form-inline mx-auto" action="/login">
+                <div class="input-group">
+                    <input id="emailInput" name="emailInput" type="email" class="form-control" placeholder="email@mail.com" aria-label="Email" aria-describedby="loginBtn">
+                    <input id="passwordInput" name="passwordInput" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="loginBtn">
+                    <div class="input-group-prepend">
+                        <button type="submit" id="loginBtn" class="login-btn">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+<%- include('end_html') %>

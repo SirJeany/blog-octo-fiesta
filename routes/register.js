@@ -69,8 +69,8 @@ function(req, res, next){
         }
       }, function(error, response, body){
         // ToDO: take user to a login page.
-        res.redirect('/');
-        // res.render('/register-success');
+        // res.redirect('/');
+        res.redirect('/register/register-success');
       });
     }
   });
@@ -78,7 +78,13 @@ function(req, res, next){
 
 // When the user has successfully registered. Take them to this page to log in.
 router.get('/register-success', function(req, res) {
+  let data = {
+    title: "Login",
+    message: "Successful Registration",
+    login: -1
+  }
 
+  res.render('register-success', data);
 })
 
 // Need to make this function centralised somewhere. Doesnt work app.js or in separate js...

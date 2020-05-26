@@ -69,6 +69,7 @@ app.use('/create-post', createPostRouter);
 app.use('/update-post', updatePostRouter);
 app.use('/update-post/delete', deletePostRouter);
 app.use('/register', registerRouter);
+app.use('/register/register-success', registerRouter);
 app.use('/login', loginRouter);
 app.use('/archives', archivesRouter);
 // Mongo DB testing:

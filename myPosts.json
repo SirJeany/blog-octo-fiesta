@@ -66,9 +66,9 @@
       "subscribed_to_newsletter": "false"
     },
     {
-      "id": "1590485171709",
+      "id": "1590497160172",
       "first_name": "New user",
-      "last_name": "Maree",
+      "last_name": "TestNew",
       "email": "new@email.com",
       "password": "123",
       "permissions": "RUM",
