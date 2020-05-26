@@ -1,7 +1,6 @@
 let express = require('express');
 let router = express.Router();
 let request = require('request');
-let allUsers = require('../myPosts.json').allUsers;
 const { check, validationResult } = require('express-validator');
 
 router.get('/', function(req, res){
@@ -72,7 +71,8 @@ function(req, res, next){
           subscribed_to_newsletter: req.body.newsletterCheckbox ? true : false
         }
       }, function(error, response, body){
-        res.render('register', {title: "register", message: "Created new user", login: -1})
+        // res.render('register', {title: "register", message: "Created new user", login: -1})
+        res.redirect('/');
       });
     }
   });
