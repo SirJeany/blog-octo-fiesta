@@ -26,7 +26,7 @@ router.get('/', function(req, res){
         if(found) {
             res.cookie('checkLogin', user_name);
         } else {
-            res.cookie('checkLogin', 'invalid_login', {maxAge: 2000}); // So that the invalid login notifier doesnt stay longer than current session
+            res.cookie('checkLogin', 'invalid_login', {maxAge: 2000}); // Invalid login message expires
         }
 
         res.redirect(req.get('referer')); // Refresh current page 
