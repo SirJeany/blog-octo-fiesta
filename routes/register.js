@@ -31,7 +31,7 @@ function(req, res, next){
   }
 
   let found = false;
-  let userCount = 0;
+  let userId = Date.now();
   const email = req.body.email;
   // First, make a get request to see if the user exists. We also want to know how many users there are currently
   request({
@@ -50,9 +50,6 @@ function(req, res, next){
       }
     }
 
-    // Set usercount for when we need to update the id...
-    userCount = Object.keys(allUsers).length;
-
     // Now check if there was a user found:
     if(found) {
       res.render('register', {title: "register", message: "User with that email already exists", login: -1})
@@ -62,7 +59,7 @@ function(req, res, next){
         url: "http://localhost:8000/allUsers/",
         method: "POST",
         form: {
-          id: userCount + 1,
+          id: userId,
           first_name: req.body.firstName,
           last_name: req.body.lastName,
           email: req.body.email,
