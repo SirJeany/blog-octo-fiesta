@@ -41,16 +41,22 @@
         <article class="summernote-article mb-4">
             <textarea id="summernote" name="editordata"><%= post.content %></textarea>
         </article>
+
+        <!-- Publish update btn -->
         <div class="clearfix">
-            <button class="btn btn-primary align-right">Publish</button>
+            <button class="btn btn-primary align-right update-post-btn">Save changes</button>
         </div>
     </form>
-    <form method="post" action="/update-post/delete/<%= post.id %>" class="clearfix mb-3">
-        <button class="btn btn-danger align-right">Delete</button>
-    </form>
+
+    <!-- Cancel update btn -->
     <div class="clearfix mb-3">
-        <a class="btn btn-warning align-right" href="/view-post/<%= post.id %>">Cancel</a>
+        <a class="btn btn-warning align-right update-post-btn" href="/view-post/<%= post.id %>">Cancel changes</a>
     </div>
+
+    <!-- Delete Post btn -->
+    <form method="post" action="/update-post/delete/<%= post.id %>" class="clearfix mb-3">
+        <button class="btn btn-danger align-right update-post-btn">Delete post</button>
+    </form>
 </main>
 
 <!-- Footer -->

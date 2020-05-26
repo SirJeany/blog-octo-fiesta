@@ -28,6 +28,15 @@ body {
 }
 
 /* Links */
+a.login-btn {
+  color: inherit;
+}
+
+a.login-btn:hover {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
 .orange-link {
   color: var(--logo-orange);
 }

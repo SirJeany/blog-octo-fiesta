@@ -6,19 +6,21 @@
             <h2>Sorry! This post does not exist</h2>
         </div>
     <% } else { %>
-        <h2 class="display-4 mb-3 text-center"><%= post.title %></h2>
-        <div class="">
-            <img style="width: 500px; height: 400px;" src="<%= post.featured_img %>" alt="Image link broken">
-            <p class="font-weight-light mb-3"><%= post.author %> <span class="ml-auto"><%= post.published_date %></span></p>
-            <h5><%- post.subtitle %></h5>
-            <div><%- post.content %></div>
+        <div class="main-content m-5">
+            <h2 class="post-title mb-4 text-center"><%= post.title %></h2>
+            <div class="post-content-div">
+                <img class="feature_img" src="<%= post.featured_img %>" alt="Image link broken">
+                <p class="font-weight-light"><%= post.author %> <span class="ml-auto"><%= post.published_date %></span></p>
+                <h4 class="mb-5 mt-4"><%- post.subtitle %></h4>
+                <div><%- post.content %></div>
+            </div>
+        
+            <% if(login != -1 && login != -2) { %>
+            <section class="mb-4">
+                <a class="btn btn-warning" href="/update-post/<%= post.id %>">Edit Post</a>
+            </section>
+            <% } %>
         </div>
-    
-        <% if(login != -1 && login != -2) { %>
-        <section class="mb-4">
-            <a class="btn btn-warning" href="/update-post/<%= post.id %>">Update</a>
-        </section>
-        <% } %>
     <% } %>
 </main>
 
