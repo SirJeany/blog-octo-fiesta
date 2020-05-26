@@ -5,6 +5,8 @@
 :root {
   --cg-blue: #2978A0;
   --amber: #ffc107;
+  --logo-orange: #FC5100;
+  --logo-orange-dark: #d14504;
   --message-green: rgba(21, 255, 0, 0.171);
 }
 
@@ -25,15 +27,17 @@ body {
   font: 14px 'Be Vietnam', sans-serif, Helvetica, Arial !important;
 }
 
-a {
-  color: #00B7FF;
+/* Links */
+.orange-link {
+  color: var(--logo-orange);
 }
 
-a:hover {
-  color: inherit !important;
-  text-decoration: none !important;
+.orange-link:hover {
+  color: var(--logo-orange-dark);
+  text-decoration: none;
 }
- 
+
+/* Lists */
 ul {
   list-style-type: none;
   margin: 0;

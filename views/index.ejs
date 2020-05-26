@@ -1,10 +1,11 @@
 <%- include('start_html') %>
 <main class="container text-center">
+  <!-- <div id="heroImage" style="width: inherit; height: 200px;"></div> -->
+  
   <!-- Hero img -->
-  <div id="heroImage" style="width: inherit; height: 200px;"></div>
-
-  <h1><%= title %></h1>
-  <p>Welcome to my blog, <%= title %></p>
+  <div id="logo-div" class="mb-5 mt-3">
+    <h1><img id="logo-main" src="/images/TravelevarT_logo.png" alt="TravelevarT"></h1>
+  </div>
   
   <!-- Posts Carousel -->
   <div class="mb-5 row">
@@ -41,17 +42,16 @@
   </div>
   <!-- Check if user is logged in, in order to give them the appropriate slection: -->
   <% if(login != -1 && login != -2) { %>
-    <h2 class="m-5">Create a new post <span><a href="/create-post">Here!</a></span></h2>
+    <h2 class="m-5">Tell your tale <span><a class="orange-link" href="/create-post">Here</a></span></h2>
   <% } else { %>
-    <h2 class="m-5">Want to create a post? <span><a href="/register">Sign up here!</a></span></h2>
+    <h2 class="m-5">Want to share your moment? <span><a class="orange-link" href="/register">Sign up here!</a></span></h2>
   <% } %>
   
 
-  <div class="m-5 yellow-box" >
+  <!-- <div class="m-5 yellow-box" >
     <small>Testing for MongoDB</small>
-    <!-- <h2>Create new listing here <span><a href="/create-listing">New Listing</a></span></h2> -->
     <h2>Create new listing here <span style="color: #007bff"><a>New Listing</a></span></h2>
-  </div>
+  </div> -->
 </main>
 
 <!-- Footer -->

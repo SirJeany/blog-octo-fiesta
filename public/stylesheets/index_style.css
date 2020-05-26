@@ -1,5 +1,10 @@
 /* Specific for index.ejs */
 
+/* LOGO */
+#logo-main {
+    width: 50%;
+}
+
 /* DISPLAYED POSTS: */
 .carousel-wrapper {
     width: 100%;
