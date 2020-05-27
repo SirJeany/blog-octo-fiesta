@@ -1,11 +1,11 @@
  + More informative registration: Have a landing page for newly registered users, asking them to log in.
  + Caorousel on small devices: Perhaps make the image smaller?
 The big move to the general viewer:
- + Landing page should have a short and clear decription of what is being expected of the user.
+ + Landing page should have a short and clear decription of what is being expected of the user - todo on the register-success page
  + Should make only you U/D own posts.
 
 Suggestions:
-Aimee: 
+Aimee:
  + Author's name should be the logged-in's name
  + Save functionality: There should be a publish AND save (keeping it as a draft) to be published later
  + Author bottom: A little bio area for the Author.

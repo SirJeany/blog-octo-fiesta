@@ -127,7 +127,7 @@ header {
 /* MAIN */
 main {
   margin-top: 22px;
-  padding-bottom: 250px; /* Needs to be same as footer height */
+  padding-bottom: 180px; /* Needs to be same as footer height */
 }
 
 
@@ -138,6 +138,6 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: var(--logo-orange);
-  height: 250px;
+  height: 180px;
   padding-top: 30px;
 }
