@@ -58,6 +58,21 @@ ul {
   clear: both;
 }
 
+/* Buttons: */
+.btn {
+  min-width: 150px;
+}
+
+.btn-orange {
+  color: black;
+  background-color: var(--logo-orange) !important;
+  border: 2px solid var(--logo-orange-dark) !important;
+}
+
+.btn-orange:hover {
+  background-color: var(--logo-orange-dark) !important;
+}
+
 /* ---------- SPECIFIC PROPS ---------- */
 
 /* HEADER AND NAV */
@@ -89,21 +104,6 @@ header {
   line-height: 1.5;
 }
 
-/* A greyed out box with a yellow outline */
-.yellow-box {
-  border-radius: 10px;
-  border: 2px solid var(--amber);
-  opacity: 0.4;
-  filter: alpha(opacity=40); /* msie */
-}
-
-/* Message box for displaying warnings or errors to the user: */
-.message-box{
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px 0px;
-  background-color: var(--message-green);
-}
 
 /* https://www.steckinsights.com/shorten-length-border-bottom-pure-css/ */
 .login-btn::after {
@@ -122,6 +122,22 @@ header {
 
 .text-warning {
   font-size: 12px;
+}
+
+/* A greyed out box with a yellow outline */
+.yellow-box {
+  border-radius: 10px;
+  border: 2px solid var(--amber);
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* msie */
+}
+
+/* Message box for displaying warnings or errors to the user: */
+.message-box{
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0px;
+  background-color: var(--message-green);
 }
 
 /* MAIN */

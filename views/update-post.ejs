@@ -44,18 +44,18 @@
 
         <!-- Publish update btn -->
         <div class="clearfix">
-            <button class="btn btn-primary align-right update-post-btn">Save changes</button>
+            <button class="btn btn-primary align-right">Save changes</button>
         </div>
     </form>
 
     <!-- Cancel update btn -->
     <div class="clearfix mb-3">
-        <a class="btn btn-warning align-right update-post-btn" href="/view-post/<%= post.id %>">Cancel changes</a>
+        <a class="btn btn-warning align-right" href="/view-post/<%= post.id %>">Cancel changes</a>
     </div>
 
     <!-- Delete Post btn -->
     <form method="post" action="/update-post/delete/<%= post.id %>" class="clearfix mb-3">
-        <button class="btn btn-danger align-right update-post-btn">Delete post</button>
+        <button class="btn btn-danger align-right">Delete post</button>
     </form>
 </main>
 
