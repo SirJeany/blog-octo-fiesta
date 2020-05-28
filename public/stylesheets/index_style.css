@@ -3,6 +3,7 @@
 /* LOGO */
 #logo-main {
     width: 50%;
+    /* max-width: 500px; */
 }
 
 /* DISPLAYED POSTS: */
@@ -11,7 +12,8 @@
 }
 
 .carousel-container {
-    width:710px;
+    max-width:710px;
+    /* width: 100%; */
 }
 
 .post-holder {

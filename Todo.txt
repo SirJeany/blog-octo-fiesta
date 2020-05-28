@@ -1,5 +1,6 @@
  + More informative registration: Have a landing page for newly registered users, asking them to log in.
  + Caorousel on small devices: Perhaps make the image smaller?
+ + Create-post is still accessible to someone not logged in (by typing in the url)
 The big move to the general viewer:
  + Landing page should have a short and clear decription of what is being expected of the user - todo on the register-success page
  + Should make only you U/D own posts.

@@ -1,51 +1,60 @@
 <%- include('start_html') %>
-<main class="container-lg text-center">
+<main>
   <!-- <div id="heroImage" style="width: inherit; height: 200px;"></div> -->
   
   <!-- Hero img -->
-  <div id="logo-div" class="mb-5 mt-3">
-    <h1><img id="logo-main" src="/images/TravelevarT_logo.png" alt="TravelevarT"></h1>
-  </div>
+  <section class="container text-center">
+    <div id="logo-div" class="mb-5 mt-3">
+      <h1><img id="logo-main" src="/images/TravelevarT_logo.png" alt="TravelevarT"></h1>
+    </div>
+  </section>
+  
   
   <!-- Posts Carousel -->
-  <div class="mb-5 row">
-    <div class="col-lg-1 arrow-wrapper">
-      <i class="far fa-caret-square-left"></i>
-    </div>
-    <div class="col-lg-10">
-      <section class="carousel-container mx-auto">
-        <div class="post-carousel">
-          <% for(let i = 0; i < 3 && posts[i]; i++){ %>
-            <div class="mx-auto">
-              <div class="post-holder text-left">
-                <div class="post-image shadow">
-                  <a href="/view-post/<%= posts[i].id %>"><img src="<%= posts[i].featured_img %>"></a>
-                </div>
-                <div class="post-text">
-                  <div class="post-div p-4 m-4 shadow">
-                    <h4 class="mb-2"><%= posts[i].title %></h4>
-                    <span class="post-content mb-2"><%= posts[i].subtitle %></span>
-                    <a href="/view-post/<%= posts[i].id %>" class="mb-2">Let's see the post then!</a>
-                    <br>
-                    <small><%= posts[i].published_date %></small>
+  <section class="container-lg">
+    <div class="mb-5 row">
+      <div class="col-lg-1 arrow-wrapper">
+        <i class="far fa-caret-square-left"></i>
+      </div>
+      <div class="col-lg-10">
+        <section class="carousel-container mx-auto">
+          <div class="post-carousel">
+            <% for(let i = 0; i < 3 && posts[i]; i++){ %>
+              <div class="mx-auto">
+                <div class="post-holder text-left">
+                  <div class="post-image shadow">
+                    <a href="/view-post/<%= posts[i].id %>"><img src="<%= posts[i].featured_img %>"></a>
+                  </div>
+                  <div class="post-text">
+                    <div class="post-div p-4 m-4 shadow">
+                      <h4 class="mb-2"><%= posts[i].title %></h4>
+                      <span class="post-content mb-2"><%= posts[i].subtitle %></span>
+                      <a href="/view-post/<%= posts[i].id %>" class="mb-2">Let's see the post then!</a>
+                      <br>
+                      <small><%= posts[i].published_date %></small>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          <% }; %>
-        </div>
-      </section>
+            <% }; %>
+          </div>
+        </section>
+      </div>
+      <div class="col-lg-1 arrow-wrapper">
+        <i class="far fa-caret-square-right"></i>
+      </div>
     </div>
-    <div class="col-lg-1 arrow-wrapper">
-      <i class="far fa-caret-square-right"></i>
-    </div>
-  </div>
-  <!-- Check if user is logged in, in order to give them the appropriate slection: -->
-  <% if(login != -1 && login != -2) { %>
-    <h2 class="m-5">Tell your tale <span><a class="orange-link" href="/create-post">Here 💃 </a></span></h2>
-  <% } else { %>
-    <h2 class="m-5">Want to share your moment? <span><a class="orange-link" href="/register">Sign up here!</a></span></h2>
-  <% } %>
+  </section>
+
+  <!-- Sign up or create post section -->
+  <section class="container-fluid text-center">
+    <!-- Check if user is logged in, in order to give them the appropriate slection: -->
+    <% if(login != -1 && login != -2) { %>
+      <h2 class="m-5">Tell your tale <span><a class="orange-link" href="/create-post">Here 💃 </a></span></h2>
+    <% } else { %>
+      <h2 class="m-5">Want to share your moment? <span><a class="orange-link" href="/register">Sign up here!</a></span></h2>
+    <% } %>
+  </section>
   
 
   <!-- <div class="m-5 yellow-box" >

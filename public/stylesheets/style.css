@@ -141,3 +141,15 @@ footer {
   height: 180px;
   padding-top: 30px;
 }
+
+.btn-footer {
+  color: #fff !important;
+  background-color: black !important;
+  border-color: black !important;
+}
+
+.btn-footer:hover {
+  color: black !important;
+  background-color: whitesmoke !important;
+  border-color: black !important;
+}
