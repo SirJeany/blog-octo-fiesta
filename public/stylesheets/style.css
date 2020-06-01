@@ -113,6 +113,7 @@ ul {
   display: block;
   max-width: 700px;
   width: 80%;
+  max-height: 90%;
 }
 
 .modal-image-caption {
