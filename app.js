@@ -16,6 +16,7 @@ let deletePostRouter = require('./routes/update-post');
 let registerRouter = require('./routes/register');
 let loginRouter = require('./routes/login');
 let archivesRouter = require('./routes/archives');
+let miscRouter = require('./routes/misc');
 // Testing mongoDB:
 let createListingRouter = require('./routes/create-listing');
 
@@ -72,6 +73,7 @@ app.use('/register', registerRouter);
 app.use('/register/register-success', registerRouter);
 app.use('/login', loginRouter);
 app.use('/archives', archivesRouter);
+app.use('/misc', miscRouter);
 // Mongo DB testing:
 app.use('/create-listing', createListingRouter);
 
