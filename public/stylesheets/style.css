@@ -27,6 +27,11 @@ body {
   font: 14px 'Be Vietnam', sans-serif, Helvetica, Arial !important;
 }
 
+/* Text: */
+.organe-text {
+  color: var(--logo-orange);
+}
+
 /* Links */
 a.login-btn {
   color: inherit;
@@ -73,7 +78,7 @@ ul {
   background-color: var(--logo-orange-dark) !important;
 }
 
-/* MODAL (popout) IMAGE */
+/* ------------ MODAL (popout) IMAGE -------------- */
 
 /* image used: */
 #projectImg {
@@ -253,4 +258,13 @@ footer {
   color: black !important;
   background-color: whitesmoke !important;
   border-color: black !important;
+}
+
+.footer-link {
+  color: black;
+}
+
+.footer-link:hover {
+  color: whitesmoke;
+  text-decoration: none;
 }
