@@ -32,6 +32,11 @@ body {
   color: var(--logo-orange);
 }
 
+/* color */
+.dark-orange {
+  background-color: var(--logo-orange-dark);
+}
+
 /* Links */
 a.login-btn {
   color: inherit;
@@ -234,7 +239,7 @@ header {
 /* MAIN */
 main {
   margin-top: 22px;
-  padding-bottom: 180px; /* Needs to be same as footer height */
+  padding-bottom: 290px; /* Needs to be same as footer height */
 }
 
 
@@ -245,7 +250,7 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: var(--logo-orange);
-  height: 180px;
+  min-height: 180px;
   padding-top: 30px;
 }
 
@@ -268,4 +273,11 @@ footer {
 .footer-link:hover {
   color: whitesmoke;
   text-decoration: none;
+}
+
+
+/* -----------RESPONSIVE-------- */
+
+@media screen and (max-width: 770px) {
+  
 }

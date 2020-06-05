@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= title %></title>
     <link rel="icon" href="/images/favicon.ico">
     
@@ -32,15 +32,18 @@
       <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="/"><img id="home-img" src="/images/Hanging_logo.png" alt="Home"></a>
         <% if(login != -1 && login != -2) { %>
+          <!-- Check logins -->
           <div class="form-inline">
             <div class="input-group-prepend mr-4">
               <span>Welcome, <%= login %></span>
+              <!-- Cookie existed, so keep logged in -->
             </div>
             <div class="input-group-append">
               <a href="/" id="logoutBtn" class="login-btn">Log out</a>
             </div>
           </div>
         <% } else { %>
+          <!-- Else no cookie info, so populate with register info -->
           <div>
 
             <div class="row">
@@ -63,6 +66,7 @@
               <div class="col-3"></div>
               <div class="col-9">
                 <% if(login === -2) { %>
+                  <!-- In case of incorrect login -->
                   <small class="text-warning">Invalid username or password</small>
                 <% } %>
               </div>

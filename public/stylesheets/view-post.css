@@ -5,12 +5,18 @@
 }
 
 .feature_img {
-    width: 500px; 
-    height: 400px;
+    max-width: 500px; 
+    max-height: 400px;
 }
 
 .post-content-div {
     margin-bottom: 100px;
 }
 
-/* UPDATE POST CSS */
+/* ------ RESPONSIVE -------- */
+
+@media screen and (max-width: 570px) {
+    .feature_img {
+        
+    }
+}

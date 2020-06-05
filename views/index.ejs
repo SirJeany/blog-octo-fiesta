@@ -22,8 +22,11 @@
               <div class="mx-auto">
                 <div class="post-holder text-left">
                   <div class="post-image shadow">
+                    <div class="title-small"><h5 class="mb-2"><%= posts[i].title %></h5></div>
+                    <!-- Small screen title -->
                     <a href="/view-post/<%= posts[i].id %>"><img src="<%= posts[i].featured_img %>"></a>
                   </div>
+                  <!-- Post info on large screens -->
                   <div class="post-text">
                     <div class="post-div p-4 m-4 shadow">
                       <h4 class="mb-2"><%= posts[i].title %></h4>
@@ -49,9 +52,9 @@
   <section class="container-fluid text-center">
     <!-- Check if user is logged in, in order to give them the appropriate slection: -->
     <% if(login != -1 && login != -2) { %>
-      <h2 class="m-5">Tell your tale <span><a class="orange-link" href="/create-post">Here 💃 </a></span></h2>
+      <h2>Tell your tale <span><a class="orange-link" href="/create-post">Here 💃 </a></span></h2>
     <% } else { %>
-      <h2 class="m-5">Want to share your moment? <span><a class="orange-link" href="/register">Sign up here!</a></span></h2>
+      <h2>Want to share your moment?<br><span><a class="orange-link" href="/register">Sign up here!</a></span></h2>
     <% } %>
   </section>
   

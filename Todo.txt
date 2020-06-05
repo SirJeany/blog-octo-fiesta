@@ -3,6 +3,7 @@
  + Create-post is still accessible to someone not logged in (by typing in the url)
 The big move to the general viewer:
  + Landing page should have a short and clear decription of what is being expected of the user - todo on the register-success page
+ + Make a 'How to post' Post.
  + Should make only you U/D own posts.
 
 Suggestions:

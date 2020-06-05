@@ -11,13 +11,24 @@ $(document).ready(function() {
         nextArrow: '.fa-caret-square-right',
         dots: true,
         pauseOnHover: true,
+        // infinite: true,
+        // adaptiveHeight: true,
+
         responsive: [
-        {
-            breakpoint: 992,
-            settings: {
-                arrows: false
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 770,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding:'30px'
+                }
             }
-        }
         ]
     });
 });
