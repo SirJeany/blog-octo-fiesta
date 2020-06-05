@@ -239,7 +239,7 @@ header {
 /* MAIN */
 main {
   margin-top: 22px;
-  padding-bottom: 290px; /* Needs to be same as footer height */
+  padding-bottom: 220px; /* Needs to be same as footer height */
 }
 
 
@@ -278,6 +278,9 @@ footer {
 
 /* -----------RESPONSIVE-------- */
 
-@media screen and (max-width: 770px) {
-  
+@media screen and (max-width: 842px) {
+  /* Increase main's padding */
+  main {
+    padding-bottom: 380px;
+  }
 }

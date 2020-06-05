@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><%= title %></title>
-    <link rel="icon" href="/images/favicon.ico">
-    
-    <!-- My styles: -->
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel="stylesheet" href="/stylesheets/index_style.css">
-    <link rel="stylesheet" href="/stylesheets/view-post.css">
-    
-    <!-- Bootstrap: -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-    <!-- Summernote: -->
-    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css" rel="stylesheet">
-
-    <!-- Font awesome kit: -->
-    <script src="https://kit.fontawesome.com/a693aed684.js" crossorigin="anonymous"></script>
-    
-    <!-- Slick CSS: -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
-    
-    <!-- Jquery: -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="/"><img id="home-img" src="/images/Hanging_logo.png" alt="Home"></a>
-        <% if(login != -1 && login != -2) { %>
-          <!-- Check logins -->
-          <div class="form-inline">
-            <div class="input-group-prepend mr-4">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title><%= title %></title>
+  <link rel="icon" href="/images/favicon.ico">
+  
+  <!-- My styles: -->
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="/stylesheets/index_style.css">
+  <link rel="stylesheet" href="/stylesheets/view-post.css">
+  
+  <!-- Bootstrap: -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  <!-- Summernote: -->
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css" rel="stylesheet">
+  
+  <!-- Font awesome kit: -->
+  <script src="https://kit.fontawesome.com/a693aed684.js" crossorigin="anonymous"></script>
+  
+  <!-- Slick CSS: -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
+  
+  <!-- Jquery: -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="/"><img id="home-img" src="/images/Hanging_logo.png" alt="Home"></a>
+      <!-- Hamburger -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <% if(login != -1 && login != -2) { %>
+        <!-- Check logins -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="form-inline ml-auto">
+            <div class="input-group-prepend mr-4 ml-auto">
               <span>Welcome, <%= login %></span>
               <!-- Cookie existed, so keep logged in -->
             </div>
@@ -42,21 +47,26 @@
               <a href="/" id="logoutBtn" class="login-btn">Log out</a>
             </div>
           </div>
+        </div>
+        
         <% } else { %>
           <!-- Else no cookie info, so populate with register info -->
-          <div>
-
-            <div class="row">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="row ml-auto">
               <form action="/register" method="GET" class="form-inline col-3">
                 <button id="registerBtn" class="login-btn" href="/register">Register</button>
                 <strong class="mx-auto">OR</strong>
               </form>
-    
+              
               <form method="POST" class="form-inline col-9" action="/login">
                 <div class="input-group">
-                  <input id="emailInput" name="emailInput" type="email" class="form-control" placeholder="email@mail.com" aria-label="Email" aria-describedby="loginBtn">
-                  <input id="passwordInput" name="passwordInput" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="loginBtn">
-                  <div class="input-group-prepend">
+                  <div class="col-md-4 col-lg-5 ">
+                    <input id="emailInput" name="emailInput" type="email" class="form-control" placeholder="email@mail.com" aria-label="Email" aria-describedby="loginBtn">
+                  </div>
+                  <div class="col-md-4 col-lg-5">
+                    <input id="passwordInput" name="passwordInput" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="loginBtn">
+                  </div>
+                  <div class="col-md-4 col-lg-2">
                     <button type="submit" id="loginBtn" class="login-btn">Login</button>
                   </div>
                 </div>
@@ -68,10 +78,10 @@
                 <% if(login === -2) { %>
                   <!-- In case of incorrect login -->
                   <small class="text-warning">Invalid username or password</small>
-                <% } %>
+                  <% } %>
+                </div>
               </div>
             </div>
-          </div>
-        <% } %>
-      </nav>
-    </header>
+            <% } %>
+          </nav>
+        </header>
