@@ -78,17 +78,3 @@ i[class*='fa-caret-square'] {
         display: none;
     }
 }
-
-@media screen and (max-width: 770px) {
-    .post-image img{
-        max-width: 250px;
-    }
-
-    .post-div {
-        display: none;
-    }
-
-    .title-small {
-        display: inline;
-    }
-}
