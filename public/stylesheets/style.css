@@ -32,6 +32,23 @@ body {
   color: var(--logo-orange);
 }
 
+
+.title-small {
+  display: none;
+  
+}
+
+.title-small h5 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 245px;
+}
+
+.title-small p {
+  max-width: 245px;
+}
+
 /* color */
 .dark-orange {
   background-color: var(--logo-orange-dark);

@@ -47,18 +47,6 @@
     right: 50px;
 }
 
-.title-small {
-    display: none;
-    
-}
-
-.title-small h5 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 245px;
-}
-
 /* Truncate text over mulitple lines: */
 /* https://dev.to/temmietope/how-to-truncate-multi-line-string-with-pure-css-4fc9 */
 .post-content {

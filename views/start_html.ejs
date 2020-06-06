@@ -49,39 +49,39 @@
           </div>
         </div>
         
-        <% } else { %>
-          <!-- Else no cookie info, so populate with register info -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="row ml-auto">
-              <form action="/register" method="GET" class="form-inline col-3">
-                <button id="registerBtn" class="login-btn" href="/register">Register</button>
-                <strong class="mx-auto">OR</strong>
-              </form>
-              
-              <form method="POST" class="form-inline col-9" action="/login">
-                <div class="input-group">
-                  <div class="col-md-4 col-lg-5 ">
-                    <input id="emailInput" name="emailInput" type="email" class="form-control" placeholder="email@mail.com" aria-label="Email" aria-describedby="loginBtn">
-                  </div>
-                  <div class="col-md-4 col-lg-5">
-                    <input id="passwordInput" name="passwordInput" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="loginBtn">
-                  </div>
-                  <div class="col-md-4 col-lg-2">
-                    <button type="submit" id="loginBtn" class="login-btn">Login</button>
-                  </div>
+      <% } else { %>
+        <!-- Else no cookie info, so populate with register info -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="row ml-auto">
+            <form action="/register" method="GET" class="form-inline col-3">
+              <button id="registerBtn" class="login-btn" href="/register">Register</button>
+              <strong class="mx-auto">OR</strong>
+            </form>
+            
+            <form method="POST" class="form-inline col-9" action="/login">
+              <div class="input-group">
+                <div class="col-md-4 col-lg-5 ">
+                  <input id="emailInput" name="emailInput" type="email" class="form-control" placeholder="email@mail.com" aria-label="Email" aria-describedby="loginBtn">
                 </div>
-              </form>
-            </div>
-            <div class="row">
-              <div class="col-3"></div>
-              <div class="col-9">
-                <% if(login === -2) { %>
-                  <!-- In case of incorrect login -->
-                  <small class="text-warning">Invalid username or password</small>
-                  <% } %>
+                <div class="col-md-4 col-lg-5">
+                  <input id="passwordInput" name="passwordInput" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="loginBtn">
+                </div>
+                <div class="col-md-4 col-lg-2">
+                  <button type="submit" id="loginBtn" class="login-btn">Login</button>
                 </div>
               </div>
+            </form>
+          </div>
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="col-9">
+              <% if(login === -2) { %>
+                <!-- In case of incorrect login -->
+                <small class="text-warning">Invalid username or password</small>
+                <% } %>
+              </div>
             </div>
-            <% } %>
-          </nav>
-        </header>
+          </div>
+        <% } %>
+      </nav>
+    </header>

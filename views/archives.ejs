@@ -5,7 +5,10 @@
         <article class="row mb-5">
             <div class="post-holder text-left">
                 <div class="post-image shadow">
+                    <div class="title-small"><h5 class="mb-2"><%= post.title %></h5></div>
+                    <!-- Small screen title -->
                     <a href="/view-post/<%= post.id %>"><img src="<%= post.featured_img %>"></a>
+                    <div class="title-small"><p class="mb-2"><%= post.subtitle %></p></div>
                 </div>
                 <div class="post-text">
                     <div class="post-div p-4 m-4 shadow">
