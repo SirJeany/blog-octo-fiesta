@@ -301,22 +301,3 @@ footer {
     padding-bottom: 380px;
   }
 }
-
-/* For all places that use the post-cards */
-@media screen and (max-width: 770px) {
-  .post-image img{
-      max-width: 250px;
-  }
-
-  .post-div {
-      display: none;
-  }
-
-  .title-small {
-      display: inline;
-  }
-
-  .card-lg {
-    display: none;
-  }
-}
